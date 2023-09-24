@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container flex justify-center items-center">
+    <h1 class="hover:text-green-700 cursor-pointer p-5">Calorie Calculator</h1>
+    <h1 class="justify-between hover:text-green-700 cursor-pointer p-5">Workout Builder</h1>
+  </div>
+  <div class="flex justify-center items-center text-left flex-col-reverse">
+    <table class="table-auto flex flex-col text-left ">
+        <tbody>
+            <tr class="border border-slate-600">
+                <td class="justify-between p-5">Gender:</td>
+                <td>
+                    <label>
+                      <input type="radio" name="gender" id="male" value="male" checked>
+                        Male
+                    </label>
+                    <label>
+                      <input type="radio" name="gender" id="female" value="female">
+                        Female
+                    </label>
+                </td>
+            </tr>
+            <tr class="border border-slate-600">
+              <td class="p-5">
+                <label for="age">Age</label>
+              </td>
+              <td>
+                <input type="text" name="age" class="border form-control w-6px" id="age" maxlength="3" value="">
+              </td>
+            </tr>
+            <tr class="border border-slate-600">
+              <td class="p-5">
+                <label for="weight">Weight</label>
+              </td>
+              <td>
+                <input type="text" name="weight" class="form-control w-6px border" id="weight" maxlength="3" placeholder="lbs" value="">
+              </td>
+            </tr>
+            <tr class="border border-slate-600">
+              <td class="p-5">
+                <label for="height">Height</label>
+              </td>
+              <td>
+                <select name="height" class="border form-control w-100 cursor-pointer" id="height">
+                  <option value="55">4ft 7in</option>
+                  <option value="56">4ft 8in</option>
+                  <option value="57">4ft 9in</option>
+                  <option value="58">4ft 10in</option>
+                  <option value="59">4ft 11in</option>
+                  <option value="60">5ft 0in</option>
+                  <option value="61">5ft 1in</option>
+                  <option value="62">5ft 2in</option>
+                  <option value="63">5ft 3in</option>
+                  <option value="64">5ft 4in</option>
+                  <option value="65">5ft 5in</option>
+                  <option value="66">5ft 6in</option>
+                  <option value="67">5ft 7in</option>
+                  <option value="68">5ft 8in</option>
+                  <option value="69" selected>5ft 9in</option>
+                  <option value="70">5ft 10in</option>
+                  <option value="71">5ft 11in</option>
+                  <option value="72">6ft 0in</option>
+                  <option value="73">6ft 1in</option>
+                  <option value="74">6ft 2in</option>
+                  <option value="75">6ft 3in</option>
+                  <option value="76">6ft 4in</option>
+                  <option value="77">6ft 5in</option>
+                  <option value="78">6ft 6in</option>
+                  <option value="79">6ft 7in</option>
+                  <option value="80">6ft 8in</option>
+                  <option value="81">6ft 9in</option>
+                  <option value="82">6ft 10in</option>
+                  <option value="83">6ft 11in</option>
+                  <option value="84">7ft 0in</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="border border-slate-600">
+              <td class="p-5">Activity Level</td>
+              <td>
+                <select name="Activity" class="border w-200 cursor-pointer">
+                  <option>sedentary (Office Job)</option>
+                  <option>Light Exercise once or twice per week</option>
+                  <option>Moderate Exercise 3 to 5 days per week</option>
+                  <option>Heavy Exercise 6 to 7 days per week</option>
+                  <option>Athlete multiple times per day</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="p-7 mt-6 flex items-center justify-center">
+              <td></td>
+              <td>
+                <input type="submit" class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700" id="submit" name="submit" value="Calculate!">
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>
