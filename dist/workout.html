@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Builder</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="">
+        <main class="min-h-screen relative bg-gradient-to-r from-slate-800 to-slate-950 text-white text-center flex flex-col">
+            <section class="flex flex-col max-w-[1200px] w-full mx-auto p-6 min-h-screen justify-center items-center gap-10 sm:gap-12 md:gap-14">
+                <div>
+                    <h1 class="p-3">
+                        Welcome to the Workout Builder!
+                    </h1>
+                    <button class="p-2 border rounded bg-sky-500 hover:bg-sky-700">
+                        Start
+                    </button>
+                </div>
+            </section>
+            <section id="generate" class="flex flex-col min-h-screen gap-10 sm:gap-12 md:gap-14 pb-24">
+                <div class="flex flex-col text-center sm:gap-1 py-10 sm:py-14 md:py-20 md:gap-2 bg-slate-950">
+                    <h1>
+                        Generate your Workout Plan!
+                    </h1>
+                </div>
+                <div class="flex flex-col gap-8 sm:gap-10 md:gap-14 px-4 w-full sm:w-fit mx-auto max-w-full">
+                    <div class="flex flex-row justify-center gap-3 sm:gap-4">
+                        <p>Step 1</p>
+                        <div class="flex flex-row items-center gap-2 pb-0.5 sm:pb-1">
+                            <p>Select a Workout Type</p>
+                        </div>
+                    </div>
+                    <div class=" flex items-stretch justify-center gap-4 grid-cols-2 space-x-10">
+                        <div class="border rounded p-5 bg-slate-500">full body</div>
+                        <div class="border rounded p-5  bg-slate-500">push-pull-legs</div>
+                        <div class="border rounded p-5  bg-slate-500">individual muscle</div>
+                        <div class="border rounded p-5  bg-slate-500">cardio</div>
+                      </div>
+                      <div class="flex flex-row justify-center gap-3 sm:gap-4">
+                        <p>Step 2</p>
+                        <div class="flex flex-row items-center gap-2 pb-0.5 sm:pb-1">
+                            <p>Goal and Objective</p>
+                        </div>
+                    </div>
+                    <div class=" flex items-stretch justify-center gap-4 grid-cols-2 space-x-10">
+                        <div class="border rounded p-5 bg-slate-500">Muscle growth</div>
+                        <div class="border rounded p-5  bg-slate-500">Strength and Power</div>
+                        <div class="border rounded p-5  bg-slate-500">Weight Loss</div>
+                      </div>
+                      <div class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+                        <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                            Generate workout plan
+                        </button>
+                      </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
