@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <title>Calorie Calculator</title>
 </head>
 <body>
+  <main>
+  <section class="min-h-screen">
   <div class="container flex justify-center items-center">
     <h1 class="hover:text-green-700 cursor-pointer p-5">Calorie Calculator</h1>
     <h1 class="justify-between hover:text-green-700 cursor-pointer p-5">Workout Builder</h1>
@@ -32,7 +35,7 @@
                 <label for="age">Age:</label>
               </td>
               <td>
-                <input type="text" name="age" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="age" maxlength="3" value="">
+                <input type="text" name="age" placeholder="Enter your Age" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="age" maxlength="3" value="">
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
@@ -50,7 +53,7 @@
                 <label for="height">Height:</label>
               </td>
               <td>
-                <select name="height" class="border form-control cursor-pointer w-full bg-green-800 focus:border-green-800 p-5  border-green-800 text-white" id="height">
+                <select name="height" class="border form-control cursor-pointer w-full py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5  border-green-800 text-white" id="height">
                   <option value="55">4ft 7in</option>
                   <option value="56">4ft 8in</option>
                   <option value="57">4ft 9in</option>
@@ -88,12 +91,12 @@
             <tr class="bg-green-700 rounded text-white font-bold">
               <td class="p-5">Activity Level:</td>
               <td>
-                <select name="Activity" class="border w-200 cursor-pointer  bg-green-800 focus:border-green-800 p-5 border-green-800 text-white">
-                  <option value="1.2">Sedentary (Office Job)</option>
-                  <option value="1.375">Light Exercise once or twice per week</option>
-                  <option value="1.55">Moderate Exercise 3 to 5 days per week</option>
-                  <option value="1.725">Heavy Exercise 6 to 7 days per week</option>
-                  <option value="1.9">Athlete multiple times per day</option>
+                <select name="Activity" class="border w-200 cursor-pointer py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5 border-green-800 text-white">
+                  <option value="1.2">Sedentary: Office Job</option>
+                  <option value="1.375">Light Exercise: once or twice per week</option>
+                  <option value="1.55">Moderate Exercise: 3 to 5 days per week</option>
+                  <option value="1.725">Heavy Exercise: 6 to 7 days per week</option>
+                  <option value="1.9">Athlete: multiple times per day</option>
                 </select>
               </td>
             </tr>
@@ -101,11 +104,48 @@
             <tr class="p-7 mt-6 flex items-center justify-center">
               <td></td>
               <td>
-                <input type="submit" class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl" id="submit" name="submit" value="Calculate!">
+                <input type="submit" class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl hover:bg-opacity-50" id="submit" name="submit" value="Calculate!">
               </td>
             </tr>
         </tbody>
     </table>
   </div>
+</section>
+<section class="flex flex-col max-w-[1200px] w-full mx-auto min-h-screen">
+  <div class="flex flex-col justify-center items-center m-20">
+    <h1 id="typing" class="text-green-700">Your Results are In...</h1>
+
+  </div>
+  <div class="flex  p-10 m-7  text-center">
+    <h2 id="cut" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Cut</h2>
+    
+    <h2 id="maintain" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Maintain</h2>
+    
+    <h2 id="bulk" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Bulk</h2>
+  </div>
+  <div class="flex flex-col text-center p-10 m-10">
+    <div class="container flex flex-row">
+     <div class="flex flex-col">
+      <p class="">Daily: <br>2500 Calories</p>
+      <p class="p-5"> Weekly: <br> 17,500 Calories </p>
+    </div>
+    <h2 class="py-14">
+      To maintain your current weight, you need to be consuming 2500 calories per day
+    </h2>
+    <h2 class="py-14">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+  </div>
+    <div>
+      <h2>
+        To cut weight you need to be consuming 2000 calories per day
+      </h2>
+      <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+    </div>
+    <h2>
+      to bulk, you need to be consuming 3000 calories per day
+    </h2>
+    <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+  </div>
+</section>
+</main>
 </body>
 </html>
