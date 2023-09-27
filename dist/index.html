@@ -35,7 +35,7 @@
                 <label for="age">Age:</label>
               </td>
               <td>
-                <input type="number" name="age" placeholder="Enter your Age" autocomplete="off" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="age" maxlength="3" value>
+                <input type="number" name="age" placeholder="Enter your Age" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="ageInput" maxlength="3" value>
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
@@ -44,7 +44,7 @@
                 <label for="weight">Weight:</label>
               </td>
               <td>
-                <input type="text" name="weight" class="w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="weight" maxlength="3" placeholder="lbs" value="">
+                <input type="text" name="weight" class="w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="weightInput" maxlength="3" placeholder="lbs" value>
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
@@ -53,7 +53,7 @@
                 <label for="height">Height:</label>
               </td>
               <td>
-                <select name="height" class="border form-control cursor-pointer w-full py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5  border-green-800 text-white" id="height">
+                <select name="height" class="border form-control cursor-pointer w-full py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5  border-green-800 text-white" id="heightSelect">
                   <option value="55">4ft 7in</option>
                   <option value="56">4ft 8in</option>
                   <option value="57">4ft 9in</option>
@@ -124,69 +124,42 @@
     <h2 id="bulk" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Bulk</h2>
   </div>
   <div class="flex flex-col text-center p-10 m-10">
-    <div class="container flex flex-row">
+    <div class="container flex flex-row" id="maintainCalories" style="display: block;">
      <div class="flex flex-col">
-      <p class="">Daily: <br>2500 Calories</p>
-      <p class="p-5"> Weekly: <br> 17,500 Calories </p>
+      <p class="" id="daily">Daily: <br>2500 Calories</p>
+      <p class="p-5" id="weekly"> Weekly: <br> 17,500 Calories </p>
     </div>
     <h2 class="py-14">
       To maintain your current weight, you need to be consuming 2500 calories per day
     </h2>
     <h2 class="py-14">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
   </div>
-    <div>
+    <div class="container flex flex-row" style="display: none;" id="cutCalories">
+      <div class="flex flex-col">
+      <p class="" id="dailyCut">Daily: <br>2500 Calories</p>
+      <p class="p-5" id="weeklyCut"> Weekly: <br> 17,500 Calories </p>
+    </div>
       <h2>
         To cut weight you need to be consuming 2000 calories per day
       </h2>
       <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+    </div>
+    <div class="container flex flex-row" style="display: none;" id="bulkCalories">
+      <div class="flex flex-col">
+      <p class="" id="dailyBulk">Daily: <br>2500 Calories</p>
+      <p class="p-5" id="weeklyBulk"> Weekly: <br> 17,500 Calories </p>
     </div>
     <h2>
       to bulk, you need to be consuming 3000 calories per day
     </h2>
     <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
   </div>
+  </div>
 </section>
 </main>
 <script>
   //the values are not showing
   document.addEventListener("DOMContentLoaded", function() {
-  // Your code to access and log element values here
-
-   var genderVal = '';
-function genderCheck(){
-    
-    var male = document.getElementById('male');
-    var female = document.getElementById('female');
-    if(male.checked == true){
-        genderVal = 5
-    } else if (female.checked == true){
-        genderVal = -161
-    }
-    return genderVal;
-}
-
-var age = document.getElementById('age');
-var ageValue = age.value;
-
-
-var weight = document.getElementById('weight');
-var weightValue = weight.value;
-var weightCM = weightValue * 0.45359237;
-
-var height = document.getElementById('height').value;
-var heightCM = height * 2.54;
-
-var activityLevel = document.getElementById('Activity').value;
-
-function calculate(){
-    var calories = ''
-    calories = (10 * weightCM) + (6.25 * heightCM) - (5 * ageValue) + genderVal;
-    console.log(ageValue);
-    console.log(heightCM);
-    console.log(genderVal)
-    console.log(calories);
-    return calories
-};
 
   function showResults(){
     document.getElementById("Results").style.display = "block";
@@ -194,11 +167,113 @@ function calculate(){
 };
 var calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener("click", () =>{ 
+// gender multiplier
+
+
+  var genderVal = '';
+    var male = document.getElementById('male');
+    var female = document.getElementById('female');
+    if(male.checked == true){
+        genderVal = 5
+    } else if (female.checked == true){
+        genderVal = -161
+    };
+    
+
+// age input
+var age = document.getElementById('ageInput');
+var ageValue = age.valueAsNumber;
+
+// weight input
+var weight = document.getElementById('weightInput');
+var weightValue = weight.value;
+var weightCM = Math.floor(weightValue * 0.45359237);
+
+// height selection
+
+var height = document.getElementById('heightSelect').value;
+var heightCM = Math.floor(height * 2.54);
+
+
+//activity level selection
+var activityLevel = document.getElementById('Activity');
+var activityValue = activityLevel.value;
+
+//formular to calculate calories
+function calculate(){
+    var calories = ''
+    calories = Math.floor(((10 * weightCM) + (6.25 * heightCM) - (5 * ageValue) + genderVal) * activityValue);
+    console.log(ageValue);
+    console.log(weightValue);
+    console.log(weightCM);
+    console.log(heightCM);
+    console.log(activityValue);
+    console.log(genderVal)
+    console.log(calories);
+    document.getElementById('daily').innerHTML = `Daily Calories: <br>${calories}</br>`;
+    document.getElementById('weekly').innerHTML = `Weekly Calories: <br>${calories * 7}</br>`;
+    document.getElementById('dailyCut').innerHTML = `Daily Calories: <br>${calories - 500}</br>`;
+    document.getElementById('weeklyCut').innerHTML = `Weekly Calories: <br>${(calories * 7) - 3500}</br>`;
+    document.getElementById('dailyBulk').innerHTML = `Daily Calories: <br>${calories + 500}</br>`;
+    document.getElementById('weeklyBulk').innerHTML = `Weekly Calories: <br>${(calories * 7) + 3500}</br>`;
+};
+
+  
   showResults();
    calculate();
+
+
+   
+
   });
+//cut maintain bulk buttons
+//functions to only show one at a time. if ones active the others are not
+  function bulkBlock(){
+    document.getElementById("bulkCalories").style.display = "block";
+  };
+  function bulkHidden(){
+    document.getElementById("bulkCalories").style.display = "none";
+  };
+  function cutBlock(){
+    document.getElementById("cutCalories").style.display = "block";
+  };
+  function cutHidden(){
+    document.getElementById("cutCalories").style.display = "none";
+  };
+  function maintainBlock(){
+    document.getElementById("maintainCalories").style.display = "block";
+  };
+  function maintainHidden(){
+    document.getElementById("maintainCalories").style.display = "none";
+  };
+
+
+
+  var bulkButton = document.getElementById('bulk');
+bulkButton.addEventListener("click", () =>{ 
+  bulkBlock();
+  cutHidden();
+  maintainHidden();
+});
+var bulkButton = document.getElementById('cut');
+bulkButton.addEventListener("click", () =>{ 
+  bulkHidden();
+  cutBlock();
+  maintainHidden();
+});
+var bulkButton = document.getElementById('maintain');
+bulkButton.addEventListener("click", () =>{ 
+  bulkHidden();
+  cutHidden();
+  maintainBlock();
+});
+
 
 });
+
+
+
+
 </script>
 </body>
 </html>
