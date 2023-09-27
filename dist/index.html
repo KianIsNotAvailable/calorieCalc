@@ -16,7 +16,7 @@
   <div class="flex justify-center items-center text-left flex-col-reverse rounded">
     <table class="table-auto flex flex-col text-left rounded">
         <tbody>
-            <tr class="bg-green-700 rounded text-white font-bold">
+            <tr class="bg-green-700 rounded text-white">
                 <td class="justify-between p-5">Gender:</td>
                 <td>
                     <label>
@@ -30,25 +30,25 @@
                 </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
-            <tr class="bg-green-700 rounded text-white font-bold">
+            <tr class="bg-green-700 rounded text-white">
               <td class="p-5">
                 <label for="age">Age:</label>
               </td>
               <td>
-                <input type="text" name="age" placeholder="Enter your Age" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="age" maxlength="3" value="">
+                <input type="number" name="age" placeholder="Enter your Age" autocomplete="off" class="form-control w-6px form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="age" maxlength="3" value>
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
-            <tr class="bg-green-700 rounded text-white font-bold ">
+            <tr class="bg-green-700 rounded text-white">
               <td class="p-5">
                 <label for="weight">Weight:</label>
               </td>
               <td>
-                <input type="text" name="weight" class="form-control w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="weight" maxlength="3" placeholder="lbs" value="">
+                <input type="text" name="weight" class="w-6px h-full placeholder:italic placeholder:text-slate-400 block bg-green-800 w-full border border-green-800 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-green-800 focus:ring-green-800 focus:ring-1 sm:text-sm" id="weight" maxlength="3" placeholder="lbs" value="">
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
-            <tr class="bg-green-700 rounded text-white font-bold">
+            <tr class="bg-green-700 rounded text-white">
               <td class="p-5">
                 <label for="height">Height:</label>
               </td>
@@ -68,7 +68,7 @@
                   <option value="66">5ft 6in</option>
                   <option value="67">5ft 7in</option>
                   <option value="68">5ft 8in</option>
-                  <option value="69" selected>5ft 9in</option>
+                  <option value="69">5ft 9in</option>
                   <option value="70">5ft 10in</option>
                   <option value="71">5ft 11in</option>
                   <option value="72">6ft 0in</option>
@@ -88,10 +88,10 @@
               </td>
             </tr>
             <tr> <td class="p-6"></td> </tr>
-            <tr class="bg-green-700 rounded text-white font-bold">
+            <tr class="bg-green-700 rounded text-white">
               <td class="p-5">Activity Level:</td>
               <td>
-                <select name="Activity" class="border w-200 cursor-pointer py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5 border-green-800 text-white">
+                <select name="Activity" id="Activity" class="border w-200 cursor-pointer py-2 pl-9 pr-3 rounded-md bg-green-800 focus:border-green-800 p-5 border-green-800 text-white">
                   <option value="1.2">Sedentary: Office Job</option>
                   <option value="1.375">Light Exercise: once or twice per week</option>
                   <option value="1.55">Moderate Exercise: 3 to 5 days per week</option>
@@ -100,18 +100,18 @@
                 </select>
               </td>
             </tr>
-            <tr> <td class="p-6"></td> </tr>
-            <tr class="p-7 mt-6 flex items-center justify-center">
+            <tr> <td class="p-4"></td> </tr>
+            <tr class="p-4 mt-4 flex items-center justify-center">
               <td></td>
               <td>
-                <input type="submit" class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl hover:bg-opacity-50" id="submit" name="submit" value="Calculate!">
+                <button class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl hover:bg-opacity-50" id="calculate">Calculate!</button>
               </td>
             </tr>
         </tbody>
     </table>
   </div>
 </section>
-<section class="flex flex-col max-w-[1200px] w-full mx-auto min-h-screen">
+<section id="Results" style="display: none;" class="flex flex-col max-w-[1200px] w-full mx-auto min-h-screen ">
   <div class="flex flex-col justify-center items-center m-20">
     <h1 id="typing" class="text-green-700">Your Results are In...</h1>
 
@@ -119,7 +119,7 @@
   <div class="flex  p-10 m-7  text-center">
     <h2 id="cut" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Cut</h2>
     
-    <h2 id="maintain" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Maintain</h2>
+    <h2 id="maintain" class="container py-7 h-20 text-white bg-green-300 cursor-pointer hover:bg-green-300">Maintain</h2>
     
     <h2 id="bulk" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Bulk</h2>
   </div>
@@ -147,5 +147,58 @@
   </div>
 </section>
 </main>
+<script>
+  //the values are not showing
+  document.addEventListener("DOMContentLoaded", function() {
+  // Your code to access and log element values here
+
+   var genderVal = '';
+function genderCheck(){
+    
+    var male = document.getElementById('male');
+    var female = document.getElementById('female');
+    if(male.checked == true){
+        genderVal = 5
+    } else if (female.checked == true){
+        genderVal = -161
+    }
+    return genderVal;
+}
+
+var age = document.getElementById('age');
+var ageValue = age.value;
+
+
+var weight = document.getElementById('weight');
+var weightValue = weight.value;
+var weightCM = weightValue * 0.45359237;
+
+var height = document.getElementById('height').value;
+var heightCM = height * 2.54;
+
+var activityLevel = document.getElementById('Activity').value;
+
+function calculate(){
+    var calories = ''
+    calories = (10 * weightCM) + (6.25 * heightCM) - (5 * ageValue) + genderVal;
+    console.log(ageValue);
+    console.log(heightCM);
+    console.log(genderVal)
+    console.log(calories);
+    return calories
+};
+
+  function showResults(){
+    document.getElementById("Results").style.display = "block";
+    
+};
+var calculateButton = document.getElementById('calculate');
+calculateButton.addEventListener("click", () =>{ 
+  showResults();
+   calculate();
+  });
+
+});
+</script>
 </body>
 </html>
