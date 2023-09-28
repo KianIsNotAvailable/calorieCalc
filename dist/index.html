@@ -129,30 +129,30 @@
       <p class="" id="daily">Daily: <br>2500 Calories</p>
       <p class="p-5" id="weekly"> Weekly: <br> 17,500 Calories </p>
     </div>
-    <h2 class="">
+    <h2 id="maintainH2">
       To maintain your current weight, you need to be consuming 2500 calories per day
     </h2>
-    <h2 class="">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+    <h2 id="maintainProtein">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
   </div>
     <div class="container flex flex-row" style="display: none;" id="cutCalories">
       <div class="flex flex-col">
       <p class="" id="dailyCut">Daily: <br>2500 Calories</p>
       <p class="p-5" id="weeklyCut"> Weekly: <br> 17,500 Calories </p>
     </div>
-      <h2>
+      <h2 id="cutH2">
         To cut weight you need to be consuming 2000 calories per day
       </h2>
-      <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+      <h2 id="cutProtein">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
     </div>
     <div class="container flex flex-row" style="display: none;" id="bulkCalories">
       <div class="flex flex-col">
       <p class="" id="dailyBulk">Daily: <br>2500 Calories</p>
       <p class="p-5" id="weeklyBulk"> Weekly: <br> 17,500 Calories </p>
     </div>
-    <h2>
+    <h2 id="bulkH2">
       to bulk, you need to be consuming 3000 calories per day
     </h2>
-    <h2>Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+    <h2 id="bulkProtein">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
   </div>
   </div>
 </section>
@@ -218,6 +218,13 @@ function calculate(){
     document.getElementById('weeklyCut').innerHTML = `Weekly Calories: <br>${(calories * 7) - 3500}</br>`;
     document.getElementById('dailyBulk').innerHTML = `Daily Calories: <br>${calories + 500}</br>`;
     document.getElementById('weeklyBulk').innerHTML = `Weekly Calories: <br>${(calories * 7) + 3500}</br>`;
+    document.getElementById('maintainH2').innerHTML = `To maintain your current weight, you need to be consuming ${calories} calories per day.`;
+    document.getElementById('maintainProtein').innerHTML = `Your Protein goal should be between ${Math.floor(weightValue * 0.8)}g and ${Math.floor(weightValue * 1.2)}g per day.<br>This is based on 0.8g - 1.2g per pound of body weight.</br>`;
+    document.getElementById('bulkH2').innerHTML = `To increase your weight by 1lb per week, you need to be consuming ${calories + 500} calories per day.`;
+    document.getElementById('bulkProtein').innerHTML = `Your Protein goal should be between ${Math.floor(weightValue * 0.8)}g and ${Math.floor(weightValue * 1.2)}g per day.<br>This is based on 0.8g - 1.2g per pound of body weight.</br>`;
+    document.getElementById('cutH2').innerHTML = `To lose 1lb per week, you need to be consuming ${calories - 500} calories per day.`;
+    document.getElementById('cutProtein').innerHTML = `Your Protein goal should be between ${Math.floor(weightValue * 0.8)}g and ${Math.floor(weightValue * 1.2)}g per day.<br>This is based on 0.8g - 1.2g per pound of body weight.</br>`;
+
 };
 
   
