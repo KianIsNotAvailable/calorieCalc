@@ -6,6 +6,9 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
+#bulk{
+  background-color: rgb(21 128 61);
+}
 #typing {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */

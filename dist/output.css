@@ -576,10 +576,6 @@ video {
   grid-row: span 1 / span 1;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .m-20 {
   margin: 5rem;
 }
@@ -703,6 +699,10 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.375rem * var(--tw-space-x-reverse));
   margin-left: calc(0.375rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded {
@@ -884,6 +884,10 @@ video {
 
 *{
   font-family: 'Poppins', sans-serif;
+}
+
+#bulk{
+  background-color: rgb(21 128 61);
 }
 
 #typing {

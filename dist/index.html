@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,14 +104,14 @@
             <tr class="p-4 mt-4 flex items-center justify-center">
               <td></td>
               <td>
-                <button class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl hover:bg-opacity-50" id="calculate">Calculate!</button>
+                <a href="#Results"><button class="flex cursor-pointer p-5 rounded-xl text-white bg-green-700 drop-shadow-xl hover:bg-opacity-50" id="calculate">Calculate!</button></a>
               </td>
             </tr>
         </tbody>
     </table>
   </div>
 </section>
-<section id="Results" style="display: none;" class="flex flex-col max-w-[1200px] w-full mx-auto min-h-screen ">
+<section id="Results" style="display: none;" class="flex flex-row max-w-[1200px] w-full mx-auto min-h-screen ">
   <div class="flex flex-col justify-center items-center m-20">
     <h1 id="typing" class="text-green-700">Your Results are In...</h1>
 
@@ -123,16 +123,16 @@
     
     <h2 id="bulk" class="container py-7 h-20 text-white bg-green-700 cursor-pointer hover:bg-green-300">Bulk</h2>
   </div>
-  <div class="flex flex-col text-center p-10 m-10">
-    <div class="container flex flex-row" id="maintainCalories" style="display: block;">
+  <div class="flex flex-row text-center">
+    <div class="container flex flex-row justify-center" id="maintainCalories" style="display: block;">
      <div class="flex flex-col">
       <p class="" id="daily">Daily: <br>2500 Calories</p>
       <p class="p-5" id="weekly"> Weekly: <br> 17,500 Calories </p>
     </div>
-    <h2 class="py-14">
+    <h2 class="">
       To maintain your current weight, you need to be consuming 2500 calories per day
     </h2>
-    <h2 class="py-14">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
+    <h2 class="">Your protein goal should be between 120g and 170g based on 0.8 - 1.2g per pound of body weight</h2>
   </div>
     <div class="container flex flex-row" style="display: none;" id="cutCalories">
       <div class="flex flex-col">
@@ -167,6 +167,8 @@
 };
 var calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener("click", () =>{ 
+
+
 // gender multiplier
 
 
@@ -230,21 +232,27 @@ function calculate(){
 //functions to only show one at a time. if ones active the others are not
   function bulkBlock(){
     document.getElementById("bulkCalories").style.display = "block";
+    document.getElementById("bulk").style.background = "rgb(134 239 172)"
   };
   function bulkHidden(){
     document.getElementById("bulkCalories").style.display = "none";
+    document.getElementById("bulk").style.background = "rgb(21 128 61)"
   };
   function cutBlock(){
     document.getElementById("cutCalories").style.display = "block";
+    document.getElementById("cut").style.background = "rgb(134 239 172)"
   };
   function cutHidden(){
     document.getElementById("cutCalories").style.display = "none";
+    document.getElementById("cut").style.background = "rgb(21 128 61)"
   };
   function maintainBlock(){
     document.getElementById("maintainCalories").style.display = "block";
+    document.getElementById("maintain").style.background = "rgb(134 239 172)"
   };
   function maintainHidden(){
     document.getElementById("maintainCalories").style.display = "none";
+    document.getElementById("maintain").style.background = "rgb(21 128 61)"
   };
 
 
