@@ -1,0 +1,139 @@
+{
+    "workouts": {
+      "Bench Press": {
+        "muscle_group": "Chest",
+        "sets": 3,
+        "reps": 8,
+        "difficulty": "Intermediate",
+        "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+      },
+      "Deadlift": {
+        "muscle_group": "Back",
+        "sets": 3,
+        "reps": 5,
+        "difficulty": "Advanced",
+        "description": "The deadlift is a powerful full-body exercise. Bend at the hips and knees to lift the barbell off the ground, then stand up straight. It targets the back, legs, and grip strength."
+      },
+      "Squat": {
+        "muscle_group": "Legs",
+        "sets": 4,
+        "reps": 10,
+        "difficulty": "Intermediate",
+        "description": "Squats are great for building leg strength. Stand with a barbell on your upper back, bend your knees, and lower your body as far as you can. Push through your heels to return to a standing position."
+      },
+      "Pull-Ups": {
+        "muscle_group": "Back",
+        "sets": 3,
+        "reps": 6,
+        "difficulty": "Intermediate",
+        "description": "Pull-ups are an excellent bodyweight exercise for the back and arms. Hang from a pull-up bar with your palms facing away, then pull your body up until your chin is above the bar."
+      },
+      "Dumbbell Shoulder Press": {
+        "muscle_group": "Shoulders",
+        "sets": 3,
+        "reps": 12,
+        "difficulty": "Beginner",
+        "description": "Sit on a bench with back support and press dumbbells overhead. This exercise strengthens your shoulder muscles."
+      },
+      "Lunges": {
+        "muscle_group": "Legs",
+        "sets": 3,
+        "reps": 12,
+        "difficulty": "Beginner",
+        "description": "Lunges are excellent for leg strength and balance. Step forward with one leg, bend both knees, and lower your body until both knees are at 90-degree angles."
+      },
+      "Push-Ups": {
+        "muscle_group": "Chest",
+        "sets": 3,
+        "reps": 15,
+        "difficulty": "Beginner",
+        "description": "Push-ups are a classic bodyweight exercise for chest and triceps. Start in a plank position, lower your body by bending your elbows, and push back up."
+      },
+      "Plank": {
+        "muscle_group": "Core",
+        "sets": 3,
+        "duration": "30 seconds",
+        "difficulty": "Beginner",
+        "description": "The plank is an isometric core exercise. Support your body on your elbows and toes, keeping your body in a straight line from head to heels."
+      },
+      "Bicep Curls": {
+        "muscle_group": "arms",
+        "sets": 3,
+        "reps": 8,
+        "difficulty":"Beginner",
+        "description": "Bicep curls target the biceps. Hold dumbbells with your palms facing forward, bend your elbows, and lift the weights toward your shoulders."
+      },
+      "Barbell Rows": {
+        "muscle_group": "Back",
+        "sets": 4,
+        "reps": 8,
+        "difficulty": "Intermediate",
+        "description": "Barbell rows are great for building a strong back. Bend at the hips and knees, and then pull the barbell toward your abdomen, squeezing your shoulder blades together."
+      },
+      "Military Press": {
+        "muscle_group": "Shoulders",
+        "sets": 3,
+        "reps": 10,
+        "difficulty": "Intermediate",
+        "description": "The military press is a standing barbell shoulder press. Lift the barbell from shoulder height to overhead. It targets the front and side deltoids."
+      },
+      "Leg Raises": {
+        "muscle_group": "Core",
+        "sets": 3,
+        "reps": 15,
+        "difficulty": "Intermediate",
+        "description": "Leg raises are an effective core exercise. Lie on your back and raise your legs to a 90-degree angle, then lower them back down without letting them touch the ground."
+      },
+      "Hammer Curls": {
+        "muscle_group": "Arms",
+        "sets": 3,
+        "reps": 10,
+        "difficulty": "Intermediate",
+        "description": "Hammer curls are a variation of bicep curls that target the brachialis muscle. Hold dumbbells with a neutral grip (palms facing each other) and curl them."
+      },
+      "Incline Bench Press": {
+        "muscle_group": "Chest",
+        "sets": 3,
+        "reps": 8,
+        "difficulty": "Intermediate",
+        "description": "Incline bench press targets the upper chest. Lie on an inclined bench and lift the barbell, lowering it to your upper chest, and push it back up."
+      },
+      "Lat Pulldowns": {
+        "muscle_group": "Back",
+        "sets": 3,
+        "reps": 10,
+        "difficulty": "Intermediate",
+        "description": "Lat pulldowns strengthen the back and lats. Sit at a cable machine, pull the bar down to your chest, and slowly release it back up."
+      },
+      "Leg Press": {
+        "muscle_group": "Legs",
+        "sets": 3,
+        "reps": 12,
+        "difficulty": "Intermediate",
+        "description": "The leg press machine is excellent for building leg strength. Push the weight upward with your legs, then lower it back down."
+      },
+      "Arnold Press": {
+        "muscle_group": "Shoulders",
+        "sets": 3,
+        "reps": 10,
+        "difficulty": "Intermediate",
+        "description": "The Arnold press is a shoulder exercise that involves rotating the dumbbells as you press them overhead. It targets all three shoulder heads."
+      },
+      "Russian Twists": {
+        "muscle_group": "Core",
+        "sets": 3,
+        "reps": 15,
+        "difficulty": "Intermediate",
+        "description": "Russian twists involve sitting on the floor, holding a weight, and twisting your torso from side to side. It targets the obliques and core muscles."
+      },
+      "Tricep Dips": {
+        "muscle_group": "Arms",
+        "sets": 3,
+        "reps": 12,
+        "difficulty": "Intermediate",
+        "description": "Tricep dips are performed using parallel bars. Lower your body by bending your elbows and then push back up. It targets the triceps."
+      }
+    }
+  }
+  
+  
