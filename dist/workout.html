@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,14 @@
                     <h1 class="p-3">
                         Welcome to the Workout Builder!
                     </h1>
-                    <button class="p-2 border rounded bg-sky-500 hover:bg-sky-700">
+                    <a href="#generate">
+                        <button class="p-2 relative border rounded bg-sky-500 hover:bg-sky-700">
                         Start
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </section>
             <section id="generate" class="flex flex-col min-h-screen gap-10 sm:gap-12 md:gap-14 pb-24">
-                <div class="flex flex-col text-center sm:gap-1 py-10 sm:py-14 md:py-20 md:gap-2 bg-slate-950">
-                    <h1>
-                        Generate your Workout Plan!
-                    </h1>
-                </div>
                 <div class="flex flex-col gap-8 sm:gap-10 md:gap-14 px-4 w-full sm:w-fit mx-auto max-w-full">
                     <div class="flex flex-row justify-center gap-3 sm:gap-4">
                         <p>Step 1</p>
@@ -32,12 +29,12 @@
                             <p>Select a Workout Type</p>
                         </div>
                     </div>
-                    <div class=" flex items-stretch justify-center space-x-1.5 grid-cols-2 font-medium py-8 sm:py-12 gap-3 sm:gap-0 sm:grid-cols-4 w-full max-w-prose">
-                        <div class="border rounded p-5  bg-slate-500 hover:bg-opacity-50">full body</div>
-                        <div class="p-5"></div>
-                        <div class="border rounded p-5  bg-slate-500 hover:bg-opacity-50">push-pull-legs</div>
-                        <div class="p-5"></div>
-                        <div class="border rounded p-5  bg-slate-500 hover:bg-opacity-50">Bro Split</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 sm:mx-auto gap-2 sm:gap-4">
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">full body</button>
+                        
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">push-pull-legs</button>
+                       
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Bro Split</button>
                       </div>
                       <div class="flex flex-row justify-center gap-3 sm:gap-4">
                         <p>Step 2</p>
@@ -45,46 +42,118 @@
                             <p>Goal and Objective</p>
                         </div>
                     </div>
-                    <div class=" flex items-stretch justify-center space-x-1.5 grid-cols-2 font-medium py-8 sm:py-12 gap-3 sm:gap-0 sm:grid-cols-4 w-full max-w-prose">
-                        <div class="border rounded p-5 bg-slate-500 hover:bg-opacity-50">Muscle growth</div>
-                        <div class="p-5"></div>
-                        <div class="border rounded p-5  bg-slate-500 row-span-1 hover:bg-opacity-50">Strength and Power</div>
-                        <div class="p-5"></div>
-                        <div class="border rounded p-5  bg-slate-500 hover:bg-opacity-50">Weight Loss</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 sm:mx-auto gap-2 sm:gap-4">
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Muscle growth</button>
+                        
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Strength and Power</button>
+                       
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Weight Loss</button>
                       </div>
                       <div class="flex justify-center">
-                        <button class="border rounded p-5 bg-slate-600">
+                        <a href="#workouts">
+                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">
                             Generate workout plan
                         </button>
+                        </a>
                       </div>
                 </div>
             </section>
-            <section >
-                <div class="flex flex-col text-center sm:gap-1 py-10 sm:py-14 md:py-20 md:gap-2 bg-slate-950">
-                    <h1>
-                        insert text
-                    </h1>
-                </div>
-            </section>
-            <section class="flex flex-col max-w-[1200px] w-full mx-auto p-6 min-h-screen justify-center items-center gap-10 sm:gap-12 md:gap-14">
+            <section id="workouts"  class="flex flex-col max-w-[1200px] w-full mx-auto p-6 min-h-screen justify-center items-center gap-10 sm:gap-12 md:gap-14">
+                <!-- Bro Split + Strength And Power -->
                 <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Bench Press</h1>
-                    <div class="flex flex-row justify-between">
+                    <div class="flex flex-row-reverse justify-between">
                     <div class="flex flex-col p-10">
-                    <p>Sets: 3</p>
+                    <p class="py-5">Sets: 3</p>
                     <p>Reps: 8</p>
                     </div>
-                    <div class="flex flex-col p-10 text-left">
-                    <p>Difficulty: Intermediate</p>
-                    <p>Muscle Group: Chest</p>
+                    <div class="flex flex-col p-10 text-center">
+                    <p class="py-5">Difficulty: Intermediate</p>
+                    <p class="">Muscle Group: Chest</p>
                     </div>
                     </div>
                     <p class="p-5">Descripton</p>
                     <p>The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up.</p>
                 </div>
+                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 class="">Incline Dumbbell Press</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p>Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p class="py-5">Difficulty: Intermediate</p>
+                            <p class="">Muscle Group: Chest</p>
+                        </div>
+                    </div>
+                    <p class="p-5">Description</p>
+                    <p>The incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 class="">Dips</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p>Reps: 10</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p class="py-5">Difficulty: Intermediate</p>
+                            <p class="">Muscle Group: Chest and Triceps</p>
+                        </div>
+                    </div>
+                    <p class="p-5">Description</p>
+                    <p>Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 class="">Tricep Pushdowns</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p>Reps: 12</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p class="py-5">Difficulty: Intermediate</p>
+                            <p class="">Muscle Group: Triceps</p>
+                        </div>
+                    </div>
+                    <p class="p-5">Description</p>
+                    <p>Tricep pushdowns isolate the triceps. Use a cable machine, grip the bar with both hands, and push it downward, extending your arms.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 class="">Skull Crushers</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p>Reps: 10</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p class="py-5">Difficulty: Intermediate</p>
+                            <p class="">Muscle Group: Triceps</p>
+                        </div>
+                    </div>
+                    <p class="p-5">Description</p>
+                    <p>Skull crushers target the triceps. Lie on a bench, hold a barbell, and lower it toward your forehead, then extend your arms.</p>
+                </div>
+                <!-- Bro Split + Muscle Growth -->
+                <!-- Bro Split + Weight Loss -->
+                <!-- Push-Pull-Legs + Muscle Growth -->
+                <!-- Push-Pull-Legs + Strength And Power -->
+                <!-- Push-Pull-Legs + Weight Loss -->
+                <!-- Full Body + Muscle Growth -->
+                <!-- Full Body + Strength And Power -->
+                <!-- Full Body + Weight Loss -->
             </section>
         </main>
     </div>
 
+<script>
+fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
+
+
+</script>
 </body>
 </html>

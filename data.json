@@ -1,139 +1,917 @@
 {
-    "workouts": {
-      "Bench Press": {
-        "muscle_group": "Chest",
-        "sets": 3,
-        "reps": 8,
-        "difficulty": "Intermediate",
-        "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
-      },
-      "Deadlift": {
-        "muscle_group": "Back",
-        "sets": 3,
-        "reps": 5,
-        "difficulty": "Advanced",
-        "description": "The deadlift is a powerful full-body exercise. Bend at the hips and knees to lift the barbell off the ground, then stand up straight. It targets the back, legs, and grip strength."
-      },
-      "Squat": {
-        "muscle_group": "Legs",
-        "sets": 4,
-        "reps": 10,
-        "difficulty": "Intermediate",
-        "description": "Squats are great for building leg strength. Stand with a barbell on your upper back, bend your knees, and lower your body as far as you can. Push through your heels to return to a standing position."
-      },
-      "Pull-Ups": {
-        "muscle_group": "Back",
-        "sets": 3,
-        "reps": 6,
-        "difficulty": "Intermediate",
-        "description": "Pull-ups are an excellent bodyweight exercise for the back and arms. Hang from a pull-up bar with your palms facing away, then pull your body up until your chin is above the bar."
-      },
-      "Dumbbell Shoulder Press": {
-        "muscle_group": "Shoulders",
-        "sets": 3,
-        "reps": 12,
-        "difficulty": "Beginner",
-        "description": "Sit on a bench with back support and press dumbbells overhead. This exercise strengthens your shoulder muscles."
-      },
-      "Lunges": {
-        "muscle_group": "Legs",
-        "sets": 3,
-        "reps": 12,
-        "difficulty": "Beginner",
-        "description": "Lunges are excellent for leg strength and balance. Step forward with one leg, bend both knees, and lower your body until both knees are at 90-degree angles."
-      },
-      "Push-Ups": {
-        "muscle_group": "Chest",
-        "sets": 3,
-        "reps": 15,
-        "difficulty": "Beginner",
-        "description": "Push-ups are a classic bodyweight exercise for chest and triceps. Start in a plank position, lower your body by bending your elbows, and push back up."
-      },
-      "Plank": {
-        "muscle_group": "Core",
-        "sets": 3,
-        "duration": "30 seconds",
-        "difficulty": "Beginner",
-        "description": "The plank is an isometric core exercise. Support your body on your elbows and toes, keeping your body in a straight line from head to heels."
-      },
-      "Bicep Curls": {
-        "muscle_group": "arms",
-        "sets": 3,
-        "reps": 8,
-        "difficulty":"Beginner",
-        "description": "Bicep curls target the biceps. Hold dumbbells with your palms facing forward, bend your elbows, and lift the weights toward your shoulders."
-      },
-      "Barbell Rows": {
-        "muscle_group": "Back",
-        "sets": 4,
-        "reps": 8,
-        "difficulty": "Intermediate",
-        "description": "Barbell rows are great for building a strong back. Bend at the hips and knees, and then pull the barbell toward your abdomen, squeezing your shoulder blades together."
-      },
-      "Military Press": {
-        "muscle_group": "Shoulders",
-        "sets": 3,
-        "reps": 10,
-        "difficulty": "Intermediate",
-        "description": "The military press is a standing barbell shoulder press. Lift the barbell from shoulder height to overhead. It targets the front and side deltoids."
-      },
-      "Leg Raises": {
-        "muscle_group": "Core",
-        "sets": 3,
-        "reps": 15,
-        "difficulty": "Intermediate",
-        "description": "Leg raises are an effective core exercise. Lie on your back and raise your legs to a 90-degree angle, then lower them back down without letting them touch the ground."
-      },
-      "Hammer Curls": {
-        "muscle_group": "Arms",
-        "sets": 3,
-        "reps": 10,
-        "difficulty": "Intermediate",
-        "description": "Hammer curls are a variation of bicep curls that target the brachialis muscle. Hold dumbbells with a neutral grip (palms facing each other) and curl them."
-      },
-      "Incline Bench Press": {
-        "muscle_group": "Chest",
-        "sets": 3,
-        "reps": 8,
-        "difficulty": "Intermediate",
-        "description": "Incline bench press targets the upper chest. Lie on an inclined bench and lift the barbell, lowering it to your upper chest, and push it back up."
-      },
-      "Lat Pulldowns": {
-        "muscle_group": "Back",
-        "sets": 3,
-        "reps": 10,
-        "difficulty": "Intermediate",
-        "description": "Lat pulldowns strengthen the back and lats. Sit at a cable machine, pull the bar down to your chest, and slowly release it back up."
-      },
-      "Leg Press": {
-        "muscle_group": "Legs",
-        "sets": 3,
-        "reps": 12,
-        "difficulty": "Intermediate",
-        "description": "The leg press machine is excellent for building leg strength. Push the weight upward with your legs, then lower it back down."
-      },
-      "Arnold Press": {
-        "muscle_group": "Shoulders",
-        "sets": 3,
-        "reps": 10,
-        "difficulty": "Intermediate",
-        "description": "The Arnold press is a shoulder exercise that involves rotating the dumbbells as you press them overhead. It targets all three shoulder heads."
-      },
-      "Russian Twists": {
-        "muscle_group": "Core",
-        "sets": 3,
-        "reps": 15,
-        "difficulty": "Intermediate",
-        "description": "Russian twists involve sitting on the floor, holding a weight, and twisting your torso from side to side. It targets the obliques and core muscles."
-      },
-      "Tricep Dips": {
-        "muscle_group": "Arms",
-        "sets": 3,
-        "reps": 12,
-        "difficulty": "Intermediate",
-        "description": "Tricep dips are performed using parallel bars. Lower your body by bending your elbows and then push back up. It targets the triceps."
-      }
+  "strength and power bro split": {
+    "chest and triceps": {
+  "Bench Press": {
+    "muscle_group": "Chest",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+  },
+  "Incline Dumbbell Press": {
+    "muscle_group": "Chest",
+    "sets": 3,
+    "reps": 8,
+    "difficulty": "Intermediate",
+    "description": "The incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level."
+  },
+  "Dips": {
+    "muscle_group": "Chest and Triceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up."
+  },
+  "Tricep Pushdowns": {
+    "muscle_group": "Triceps",
+    "sets": 3,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Tricep pushdowns isolate the triceps. Use a cable machine, grip the bar with both hands, and push it downward, extending your arms."
+  },
+  "Skull Crushers": {
+    "muscle_group": "Triceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Skull crushers target the triceps. Lie on a bench, hold a barbell, and lower it toward your forehead, then extend your arms."
+  }
+},
+"back and biceps": {
+  "Deadlift": {
+    "muscle_group": "Back and Legs",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The deadlift is a compound exercise that works the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+  },
+  "Pull-Ups": {
+    "muscle_group": "Back and Biceps",
+    "sets": 3,
+    "reps": 8,
+    "difficulty": "Intermediate",
+    "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+  },
+  "Barbell Rows": {
+    "muscle_group": "Back",
+    "sets": 3,
+    "reps": 8,
+    "difficulty": "Intermediate",
+    "description": "Barbell rows are a compound exercise for the back. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+  },
+  "Bicep Curls": {
+    "muscle_group": "Biceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+  },
+  "Hammer Curls": {
+    "muscle_group": "Biceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Hammer curls also target the biceps. Hold dumbbells with a neutral grip and curl them toward your shoulders, then lower them."
+  }
+},
+  "legs": {
+    "Squats": {
+      "muscle_group": "Legs",
+      "sets": 4,
+      "reps": 5,
+      "difficulty": "Intermediate",
+      "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+    },
+    "Leg Press": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": 8,
+      "difficulty": "Intermediate",
+      "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+    },
+    "Romanian Deadlifts": {
+      "muscle_group": "Hamstrings and Lower Back",
+      "sets": 3,
+      "reps": 8,
+      "difficulty": "Intermediate",
+      "description": "Romanian deadlifts focus on the hamstrings and lower back. Hold a barbell or dumbbells and hinge at your hips while keeping your back straight, then return to a standing position."
+    },
+    "Standing Calf Raises": {
+      "muscle_group": "Calves",
+      "sets": 4,
+      "reps": 12,
+      "difficulty": "Intermediate",
+      "description": "Standing calf raises isolate the calf muscles. Stand on a calf raise machine or platform, lower your heels below the platform, and then raise them as high as possible."
+    }
+  },
+  "shoulders and abs":{
+    "Military Press": {
+      "muscle_group": "Shoulders",
+      "sets": 4,
+      "reps": 5,
+      "difficulty": "Intermediate",
+      "description": "The military press, also known as the overhead press, targets the shoulders. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+    },
+    "Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": 10,
+      "difficulty": "Intermediate",
+      "description": "Lateral raises isolate the lateral deltoid muscles. Hold dumbbells at your sides and raise them out to the sides until shoulder level, then lower them."
+    },
+    "Bent-Over Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": 10,
+      "difficulty": "Intermediate",
+      "description": "Bent-over lateral raises target the rear deltoids. Bend at the hips, hold dumbbells, and raise them out to the sides while keeping your arms straight, then lower them."
+    },
+    "Planks": {
+      "muscle_group": "Core",
+      "sets": 4,
+      "reps": "30 seconds",
+      "difficulty": "Intermediate",
+      "description": "Planks are an isometric exercise that strengthens the core. Support your body on your forearms and toes, keeping your body in a straight line from head to heels."
     }
   }
-  
-  
+},
+"muscle growth bro split":{
+  "chest and triceps": {
+    "Bench Press": {
+      "muscle_group": "Chest",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Bench press targets the chest muscles. Lie on a bench, lift the barbell, and lower it to your chest, then push it back up."
+    },
+    "Incline Dumbbell Flyes": {
+      "muscle_group": "Chest",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Incline dumbbell flyes target the upper chest. Lie on an inclined bench and perform flyes with dumbbells."
+    },
+    "Chest Dips": {
+      "muscle_group": "Chest and Triceps",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Chest dips are a compound exercise that works the chest and triceps. Use parallel bars and lower your body, then push it back up."
+    },
+    "Tricep Pushdowns": {
+      "muscle_group": "Triceps",
+      "sets": 4,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Tricep pushdowns isolate the triceps. Use a cable machine and push the bar downward, extending your arms."
+    },
+    "Skull Crushers": {
+      "muscle_group": "Triceps",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Skull crushers target the triceps. Lie on a bench, hold a barbell, and lower it toward your forehead, then extend your arms."
+    }
+  },
+  "back and biceps": {
+    "Pull-Ups": {
+      "muscle_group": "Back and Biceps",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+    },
+    "T-Bar Rows": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "T-bar rows are a compound exercise for the back. Bend at the hips, hold a handle, and pull it to your lower ribcage, then lower it back down."
+    },
+    "Lat Pulldowns": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lat pulldowns work the upper back. Use a cable machine, grip the bar, and pull it down to your chest, then release it upward."
+    },
+    "Bicep Curls": {
+      "muscle_group": "Biceps",
+      "sets": 4,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+    },
+    "Hammer Curls": {
+      "muscle_group": "Biceps",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Hammer curls also target the biceps. Hold dumbbells with a neutral grip and curl them toward your shoulders, then lower them."
+    }
+  },
+  "legs": {
+    "Squats": {
+      "muscle_group": "Legs",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+    },
+    "Leg Press": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+    },
+    "Lunges": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lunges target the quadriceps and glutes. Take a step forward, lunge, and return to the starting position, then switch legs."
+    },
+    "Leg Curls": {
+      "muscle_group": "Hamstrings",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Leg curls isolate the hamstrings. Use a leg curl machine and curl your legs upward, then lower them back down."
+    },
+    "Standing Calf Raises": {
+      "muscle_group": "Calves",
+      "sets": 4,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Standing calf raises isolate the calf muscles. Stand on a calf raise machine or platform, lower your heels below the platform, and then raise them as high as possible."
+    }
+  },
+  "shoulders and abs": {
+    "Military Press": {
+      "muscle_group": "Shoulders",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The military press, also known as the overhead press, targets the shoulders. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+    },
+    "Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lateral raises isolate the lateral deltoid muscles. Hold dumbbells at your sides and raise them out to the sides until shoulder level, then lower them."
+    },
+    "Front Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Front raises target the front deltoids. Hold dumbbells and raise them forward until shoulder level, then lower them."
+    },
+    "Bent-Over Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Bent-over lateral raises focus on the rear deltoids. Bend at the hips, hold dumbbells, and raise them out to the sides while keeping your arms straight, then lower them."
+    },
+    "Ab Crunches": {
+      "muscle_group": "Core",
+      "sets": 4,
+      "reps": "15-20",
+      "difficulty": "Intermediate",
+      "description": "Ab crunches target the core muscles. Lie on your back, bend your knees, and curl your upper body off the ground toward your thighs, then lower it back down."
+    }
+  }
+},
+"weight loss bro split": {
+  "chest and cardio": {
+    "Bench Press": {
+      "muscle_group": "Chest",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+    },
+    "Incline Dumbbell Press": {
+      "muscle_group": "Chest",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level."
+    },
+    "Dips": {
+      "muscle_group": "Chest and Triceps",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up."
+    },
+    "Tricep Pushdowns": {
+      "muscle_group": "Triceps",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Tricep pushdowns isolate the triceps. Use a cable machine, grip the bar with both hands, and push it downward, extending your arms."
+    },
+    "Cardio": {
+      "activity": "High-Intensity Interval Training (HIIT)",
+      "duration": "20-30 minutes",
+      "description": "Engage in 20-30 minutes of high-intensity interval training (HIIT) on a treadmill, stationary bike, or elliptical machine for cardiovascular conditioning."
+    }
+  },
+  "back and cardio": {
+    "Deadlift": {
+      "muscle_group": "Back and Legs",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Deadlifts work the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+    },
+    "Pull-Ups": {
+      "muscle_group": "Back and Biceps",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+    },
+    "Barbell Rows": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Barbell rows are a compound exercise for the back. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+    },
+    "Bicep Curls": {
+      "muscle_group": "Biceps",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+    },
+    "Cardio": {
+      "activity": "High-Intensity Interval Training (HIIT) or Steady-State Cardio",
+      "duration": "20-30 minutes",
+      "description": "Engage in 20-30 minutes of HIIT or steady-state cardio for cardiovascular conditioning."
+    }
+  },
+  "legs and cardio":{
+    "Squats": {
+      "muscle_group": "Legs",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+    },
+    "Leg Press": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+    },
+    "Lunges": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lunges target the quadriceps and glutes. Take a step forward, lunge, and return to the starting position, then switch legs."
+    },
+    "Leg Curls": {
+      "muscle_group": "Hamstrings",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Leg curls isolate the hamstrings. Use a leg curl machine and curl your legs upward, then lower them back down."
+    },
+    "Standing Calf Raises": {
+      "muscle_group": "Calves",
+      "sets": 4,
+      "reps": "15-20",
+      "difficulty": "Intermediate",
+      "description": "Standing calf raises isolate the calf muscles. Stand on a calf raise machine or platform, lower your heels below the platform, and then raise them as high as possible."
+    },
+    "Cardio": {
+      "activity": "High-Intensity Interval Training (HIIT) or Steady-State Cardio",
+      "duration": "20-30 minutes",
+      "description": "Engage in 20-30 minutes of HIIT or steady-state cardio for cardiovascular conditioning."
+    }
+  },
+  "shoulders and cardio": {
+    "Military Press": {
+      "muscle_group": "Shoulders",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The military press, also known as the overhead press, targets the shoulders. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+    },
+    "Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lateral raises isolate the lateral deltoid muscles. Hold dumbbells at your sides and raise them out to the sides until shoulder level, then lower them."
+    },
+    "Front Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Front raises target the front deltoids. Hold dumbbells and raise them forward until shoulder level, then lower them."
+    },
+    "Bent-Over Lateral Raises": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Bent-over lateral raises focus on the rear deltoids. Bend at the hips, hold dumbbells, and raise them out to the sides while keeping your arms straight, then lower them."
+    },
+    "Cardio": {
+      "activity": "High-Intensity Interval Training (HIIT) or Steady-State Cardio",
+      "duration": "20-30 minutes",
+      "description": "Engage in 20-30 minutes of HIIT or steady-state cardio for cardiovascular conditioning."
+    }
+  }
+},
+"strength and power full body":{
+  "Squats": {
+    "muscle_group": "Legs",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+  },
+  "Bench Press": {
+    "muscle_group": "Chest",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+  },
+  "Deadlifts": {
+    "muscle_group": "Back and Legs",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "Deadlifts work the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+  },
+  "Pull-Ups": {
+    "muscle_group": "Back and Biceps",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+  },
+  "Overhead Press": {
+    "muscle_group": "Shoulders",
+    "sets": 3,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The overhead press targets the shoulder muscles. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+  }
+},
+"muscle growth full body": {
+  "Squats": {
+    "muscle_group": "Legs",
+    "sets": 4,
+    "reps": "8-10",
+    "difficulty": "Intermediate",
+    "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+  },
+  "Bench Press": {
+    "muscle_group": "Chest",
+    "sets": 4,
+    "reps": "8-10",
+    "difficulty": "Intermediate",
+    "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+  },
+  "Bent-Over Rows": {
+    "muscle_group": "Back",
+    "sets": 4,
+    "reps": "8-10",
+    "difficulty": "Intermediate",
+    "description": "Bent-over rows target the back muscles. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+  },
+  "Pull-Ups": {
+    "muscle_group": "Back and Biceps",
+    "sets": 4,
+    "reps": "max reps",
+    "difficulty": "Intermediate",
+    "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+  },
+  "Leg Curls": {
+    "muscle_group": "Hamstrings",
+    "sets": 3,
+    "reps": "10-12",
+    "difficulty": "Intermediate",
+    "description": "Leg curls isolate the hamstrings. Use a leg curl machine and curl your legs upward, then lower them back down."
+  }
+},
+"weight loss full body":{
+  "Squats": {
+    "muscle_group": "Legs",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+  },
+  "Push-Ups": {
+    "muscle_group": "Chest and Triceps",
+    "sets": 3,
+    "reps": "max reps",
+    "difficulty": "Intermediate",
+    "description": "Push-ups are a bodyweight exercise that works the chest, shoulders, and triceps. Keep your body in a straight line and push your body up from the ground."
+  },
+  "Bent-Over Rows": {
+    "muscle_group": "Back",
+    "sets": 3,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Bent-over rows target the back muscles. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+  },
+  "Leg Press": {
+    "muscle_group": "Legs",
+    "sets": 3,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+  },
+  "Planks": {
+    "muscle_group": "Core",
+    "sets": 3,
+    "reps": "30 seconds",
+    "difficulty": "Intermediate",
+    "description": "Planks are an isometric exercise that strengthens the core. Support your body on your forearms and toes, keeping your body in a straight line from head to heels."
+  },
+  "Lunges": {
+    "muscle_group": "Legs",
+    "sets": 3,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Lunges target the quadriceps, hamstrings, and glutes. Take a step forward, lunge, and return to the starting position, then switch legs."
+  },
+  "Dumbbell Bench Press": {
+    "muscle_group": "Chest",
+    "sets": 3,
+    "reps": "10-12",
+    "difficulty": "Intermediate",
+    "description": "Dumbbell bench press targets the chest muscles. Lie on a flat bench, hold dumbbells, and press them up and down."
+  },
+  "Lat Pulldowns": {
+    "muscle_group": "Back",
+    "sets": 3,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Lat pulldowns work the upper back. Use a cable machine, grip the bar, and pull it down to your chest, then release it upward."
+  },
+  "Dips": {
+    "muscle_group": "Chest and Triceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up."
+  },
+  "Russian Twists": {
+    "muscle_group": "Core",
+    "sets": 3,
+    "reps": "15 reps per side",
+    "difficulty": "Intermediate",
+    "description": "Russian twists engage the core. Sit on the ground, hold a weight or medicine ball, and twist your torso to each side."
+  }
+},
+"PushPullLegs strength and power": {
+  "Pull Day": {
+    "Deadlift": {
+      "muscle_group": "Back and Legs",
+      "sets": 4,
+      "reps": 5,
+      "difficulty": "Intermediate",
+      "description": "Deadlifts work the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+    },
+    "Pull-Ups": {
+      "muscle_group": "Back and Biceps",
+      "sets": 3,
+      "reps": 5,
+      "difficulty": "Intermediate",
+      "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+    },
+    "Bent-Over Rows": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": 8,
+      "difficulty": "Intermediate",
+      "description": "Bent-over rows target the back muscles. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+    },
+    "Face Pulls": {
+      "muscle_group": "Shoulders and Upper Back",
+      "sets": 3,
+      "reps": 10,
+      "difficulty": "Intermediate",
+      "description": "Face pulls target the rear deltoids and upper back. Use a rope attachment on a cable machine, pull the rope towards your face, and squeeze your shoulder blades together."
+    },
+    "Bicep Curls": {
+      "muscle_group": "Biceps",
+      "sets": 3,
+      "reps": 10,
+      "difficulty": "Intermediate",
+      "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+    }
+},
+"Leg Day": {
+  "Squats": {
+    "muscle_group": "Legs",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+  },
+  "Romanian Deadlifts": {
+    "muscle_group": "Hamstrings and Lower Back",
+    "sets": 3,
+    "reps": 8,
+    "difficulty": "Intermediate",
+    "description": "Romanian deadlifts focus on the hamstrings and lower back. Hold a barbell or dumbbells, hinge at your hips, and lower the weight while keeping your back straight, then stand back up."
+  },
+  "Leg Press": {
+    "muscle_group": "Legs",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+  },
+  "Standing Calf Raises": {
+    "muscle_group": "Calves",
+    "sets": 4,
+    "reps": 12,
+    "difficulty": "Intermediate",
+    "description": "Standing calf raises isolate the calf muscles. Stand on a calf raise machine or platform, lower your heels below the platform, and then raise them as high as possible."
+  }
+},
+"Push Day": {
+  "Bench Press": {
+    "muscle_group": "Chest",
+    "sets": 4,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+  },
+  "Overhead Press": {
+    "muscle_group": "Shoulders",
+    "sets": 3,
+    "reps": 5,
+    "difficulty": "Intermediate",
+    "description": "The overhead press targets the shoulder muscles. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+  },
+  "Incline Dumbbell Press": {
+    "muscle_group": "Chest",
+    "sets": 3,
+    "reps": 8,
+    "difficulty": "Intermediate",
+    "description": "Incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level."
+  },
+  "Tricep Dips": {
+    "muscle_group": "Triceps",
+    "sets": 3,
+    "reps": 10,
+    "difficulty": "Intermediate",
+    "description": "Tricep dips isolate the triceps. Use parallel bars, lower your body, and push it back up."
+  },
+  "Push-ups": {
+    "muscle_group": "Chest and Triceps",
+    "sets": 3,
+    "reps": "max reps",
+    "difficulty": "Intermediate",
+    "description": "Push-ups are a bodyweight exercise that works the chest, shoulders, and triceps. Keep your body in a straight line and push your body up from the ground."
+  }
+}
+},
+"PushPullLegs muscle growth": {
+  "Push Day": {
+    "Bench Press": {
+      "muscle_group": "Chest",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+    },
+    "Overhead Press": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The overhead press targets the shoulder muscles. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+    },
+    "Incline Dumbbell Press": {
+      "muscle_group": "Chest",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level."
+    },
+    "Tricep Dips": {
+      "muscle_group": "Triceps",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Tricep dips isolate the triceps. Use parallel bars, lower your body, and push it back up."
+    },
+    "Push-ups": {
+      "muscle_group": "Chest and Triceps",
+      "sets": 3,
+      "reps": "max reps",
+      "difficulty": "Intermediate",
+      "description": "Push-ups are a bodyweight exercise that works the chest, shoulders, and triceps. Keep your body in a straight line and push your body up from the ground."
+    }
+  },
+  "Pull Day": {
+    "Deadlift": {
+      "muscle_group": "Back and Legs",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Deadlifts work the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+    },
+    "Pull-Ups": {
+      "muscle_group": "Back and Biceps",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+    },
+    "Bent-Over Rows": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Bent-over rows target the back muscles. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+    },
+    "Face Pulls": {
+      "muscle_group": "Shoulders and Upper Back",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Face pulls target the rear deltoids and upper back. Use a rope attachment on a cable machine, pull the rope towards your face, and squeeze your shoulder blades together."
+    },
+    "Bicep Curls": {
+      "muscle_group": "Biceps",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+    }
+  },
+  "Leg Day": {
+    "Squats": {
+      "muscle_group": "Legs",
+      "sets": 4,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+    },
+    "Leg Press": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+    },
+    "Lunges": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lunges target the quadriceps, hamstrings, and glutes. Take a step forward, lunge, and return to the starting position, then switch legs."
+    },
+    "Leg Curls": {
+      "muscle_group": "Hamstrings",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Leg curls isolate the hamstrings. Use a leg curl machine and curl your legs upward, then lower them back down."
+    },
+    "Seated Calf Raises": {
+      "muscle_group": "Calves",
+      "sets": 4,
+      "reps": "15-20",
+      "difficulty": "Intermediate",
+      "description": "Seated calf raises isolate the calf muscles. Sit on a calf raise machine or bench, place the weight on your knees, and raise your heels as high as possible."
+    }
+  }
+},
+"PushPullLegs weight loss": {
+  "Push Day": {
+    "Bench Press": {
+      "muscle_group": "Chest",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up."
+    },
+    "Overhead Press": {
+      "muscle_group": "Shoulders",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "The overhead press targets the shoulder muscles. Press a barbell or dumbbells from shoulder height to overhead, then lower it back down."
+    },
+    "Incline Dumbbell Press": {
+      "muscle_group": "Chest",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level."
+    },
+    "Tricep Dips": {
+      "muscle_group": "Triceps",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Tricep dips isolate the triceps. Use parallel bars, lower your body, and push it back up."
+    },
+    "Push-ups": {
+      "muscle_group": "Chest and Triceps",
+      "sets": 3,
+      "reps": "max reps",
+      "difficulty": "Intermediate",
+      "description": "Push-ups are a bodyweight exercise that works the chest, shoulders, and triceps. Keep your body in a straight line and push your body up from the ground."
+    }
+  },
+  "Pull Day": {
+    "Deadlift": {
+      "muscle_group": "Back and Legs",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Deadlifts work the lower back, hamstrings, glutes, and more. Lift a loaded barbell from the ground to a standing position."
+    },
+    "Pull-Ups": {
+      "muscle_group": "Back and Biceps",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Pull-ups are a bodyweight exercise targeting the back and biceps. Hang from a bar and pull your body upward until your chin passes the bar."
+    },
+    "Bent-Over Rows": {
+      "muscle_group": "Back",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Bent-over rows target the back muscles. Bend at the hips, hold a barbell, and pull it to your lower ribcage, then lower it back down."
+    },
+    "Face Pulls": {
+      "muscle_group": "Shoulders and Upper Back",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Face pulls target the rear deltoids and upper back. Use a rope attachment on a cable machine, pull the rope towards your face, and squeeze your shoulder blades together."
+    },
+    "Bicep Curls": {
+      "muscle_group": "Biceps",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Bicep curls isolate the biceps. Hold dumbbells or a barbell, curl the weight toward your shoulders, and lower it back down."
+    }
+  },
+  "Leg Day": {
+    "Squats": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "8-10",
+      "difficulty": "Intermediate",
+      "description": "Squats are a compound exercise that primarily target the quadriceps, hamstrings, and glutes. Bend your knees and hips to lower your body and then push back up to a standing position."
+    },
+    "Leg Press": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Leg press works the quadriceps, hamstrings, and glutes. Sit on a leg press machine and press the weight upward using your legs."
+    },
+    "Lunges": {
+      "muscle_group": "Legs",
+      "sets": 3,
+      "reps": "10-12",
+      "difficulty": "Intermediate",
+      "description": "Lunges target the quadriceps, hamstrings, and glutes. Take a step forward, lunge, and return to the starting position, then switch legs."
+    },
+    "Leg Curls": {
+      "muscle_group": "Hamstrings",
+      "sets": 3,
+      "reps": "12-15",
+      "difficulty": "Intermediate",
+      "description": "Leg curls isolate the hamstrings. Use a leg curl machine and curl your legs upward, then lower them back down."
+    },
+    "Standing Calf Raises": {
+      "muscle_group": "Calves",
+      "sets": 3,
+      "reps": "15-20",
+      "difficulty": "Intermediate",
+      "description": "Standing calf raises isolate the calf muscles. Stand on a calf raise machine or platform, lower your heels below the platform, and then raise them as high as possible."
+    }
+  }
+}
+
+
+}
