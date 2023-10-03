@@ -30,11 +30,11 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 sm:mx-auto gap-2 sm:gap-4">
-                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">full body</button>
+                        <button id="fullbodyBtn" class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">full body</button>
                         
-                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">push-pull-legs</button>
+                        <button id="PPLBtn" class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">push-pull-legs</button>
                        
-                        <button class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Bro Split</button>
+                        <button id="brosplitBtn" class="capitalize duration-200 p-4 grid bg-slate-950 font-light text-sm sm:text-base rounded-md place-items-center border-[1.5px] border-solid  border-transparent hover:border-blue-500">Bro Split</button>
                       </div>
                       <div class="flex flex-row justify-center gap-3 sm:gap-4">
                         <p>Step 2</p>
@@ -59,8 +59,45 @@
                 </div>
             </section>
             <section id="workouts"  class="flex flex-col max-w-[1200px] w-full mx-auto p-6 min-h-screen justify-center items-center gap-10 sm:gap-12 md:gap-14">
+                <!-- tabs -->
+                <!-- push pull legs -->
+                <div id="ppltabs" class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                    <ul class="flex flex-wrap -mb-px">
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Push</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500" aria-current="page">Pull</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Legs</a>
+                        </li>
+                        
+                </div>
+                <!-- bro split tabs -->
+                <div id="brosplittabs" class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                    <ul class="flex flex-wrap -mb-px">
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Chest</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500" aria-current="page">Back</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Legs</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Shoulders</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Arms</a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <!-- Bro Split + Strength And Power -->
-                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Bench Press</h1>
                     <div class="flex flex-row-reverse justify-between">
                     <div class="flex flex-col p-10">
@@ -75,7 +112,7 @@
                     <p class="p-5">Descripton</p>
                     <p>The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up.</p>
                 </div>
-                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Incline Dumbbell Press</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
@@ -90,7 +127,7 @@
                     <p class="p-5">Description</p>
                     <p>The incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level.</p>
                 </div>
-                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Dips</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
@@ -105,7 +142,7 @@
                     <p class="p-5">Description</p>
                     <p>Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up.</p>
                 </div>
-                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Tricep Pushdowns</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
@@ -120,7 +157,7 @@
                     <p class="p-5">Description</p>
                     <p>Tricep pushdowns isolate the triceps. Use a cable machine, grip the bar with both hands, and push it downward, extending your arms.</p>
                 </div>
-                <div class="block max-w-md p-6 bg-white border-gray-200 border rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h1 class="">Skull Crushers</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
@@ -146,12 +183,22 @@
             </section>
         </main>
     </div>
-
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
 
 
+function pushPullLegsSelected(){
+document.getElementById('ppltabs').style.display = 'block';
+document.getElementById('brosplittabs').style.display = 'none';
+};
 
 
+var fullBodyBtn = document.getElementById("fullbodyBtn").addEventListener("click", () =>
+    pushPullLegsSelected();
+);
+
+});
 </script>
 </body>
 </html>
