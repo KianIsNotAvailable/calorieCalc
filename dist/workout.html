@@ -187,15 +187,35 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-
+// clicking push pull legs button
 function pushPullLegsSelected(){
 document.getElementById('ppltabs').style.display = 'block';
 document.getElementById('brosplittabs').style.display = 'none';
 };
 
 
-var fullBodyBtn = document.getElementById("fullbodyBtn").addEventListener("click", () =>
+var PPLBtn = document.getElementById("PPLBtn").addEventListener("click", () =>
     pushPullLegsSelected()
+);
+// clicking bro split
+function broSplitSelected(){
+document.getElementById('ppltabs').style.display = 'none';
+document.getElementById('brosplittabs').style.display = 'block';
+};
+
+
+var PPLBtn = document.getElementById("brosplitBtn").addEventListener("click", () =>
+    broSplitSelected()
+);
+// clicking full body
+function fullBodySelected(){
+document.getElementById('ppltabs').style.display = 'none';
+document.getElementById('brosplittabs').style.display = 'none';
+};
+
+
+var fullbodyBtn = document.getElementById("fullbodyBtn").addEventListener("click", () =>
+    fullBodySelected()
 );
 
 });
