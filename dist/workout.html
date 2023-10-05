@@ -15,7 +15,7 @@
                         Welcome to the Workout Builder!
                     </h1>
                     <a href="#generate">
-                        <button class="p-2 relative border rounded bg-sky-500 hover:bg-sky-700">
+                        <button id="generateBtn" class="p-2 relative border rounded bg-sky-500 hover:bg-sky-700">
                         Start
                         </button>
                     </a>
@@ -96,103 +96,649 @@
                 </div>
 
 
-                <!-- Bro Split + Strength And Power -->
+                <!-- Push -->
+                <div id="pushResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_push1">Push Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_push1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_push1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_push1">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_push1" class="p-5">Description</p>
+                        <p id="description_text_push1">Description for Push Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_push2">Push Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_push2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_push2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_push2">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_push2" class="p-5">Description</p>
+                        <p id="description_text_push2">Description for Push Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_push3">Push Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_push3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_push3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_push3">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_push3" class="p-5">Description</p>
+                        <p id="description_text_push3">Description for Push Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_push4">Push Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_push4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_push4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_push4">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_push4" class="p-5">Description</p>
+                        <p id="description_text_push4">Description for Push Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_push5">Push Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_push5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_push5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_push5">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_push5" class="p-5">Description</p>
+                        <p id="description_text_push5">Description for Push Exercise 5.</p>
+                    </div>
+            <!-- full body -->
+            <div id="fullBodyResults" style="display: none;">
                 <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <h1 class="">Bench Press</h1>
-                    <div class="flex flex-row-reverse justify-between">
-                    <div class="flex flex-col p-10">
-                    <p class="py-5">Sets: 3</p>
-                    <p>Reps: 8</p>
-                    </div>
-                    <div class="flex flex-col p-10 text-center">
-                    <p class="py-5">Difficulty: Intermediate</p>
-                    <p class="">Muscle Group: Chest</p>
-                    </div>
-                    </div>
-                    <p class="p-5">Descripton</p>
-                    <p>The bench press is a compound exercise that targets the chest muscles. Lie on a flat bench, lift the barbell, and lower it to your chest, then push it back up.</p>
-                </div>
-                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <h1 class="">Incline Dumbbell Press</h1>
+                    <h1 id="exercise_name_fullbody1">Full Body Exercise 1</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
                             <p class="py-5">Sets: 3</p>
-                            <p>Reps: 8</p>
+                            <p id="reps_fullbody1">Reps: 8</p>
                         </div>
                         <div class="flex flex-col p-10 text-center">
-                            <p class="py-5">Difficulty: Intermediate</p>
-                            <p class="">Muscle Group: Chest</p>
+                            <p id="difficulty_fullbody1" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_fullbody1">Muscle Group: Full Body</p>
                         </div>
                     </div>
-                    <p class="p-5">Description</p>
-                    <p>The incline dumbbell press targets the upper chest muscles. Lie on an inclined bench and press dumbbells upward, then lower them to chest level.</p>
+                    <p id="description_fullbody1" class="p-5">Description</p>
+                    <p id="description_text_fullbody1">Description for Full Body Exercise 1.</p>
                 </div>
                 <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <h1 class="">Dips</h1>
+                    <h1 id="exercise_name_fullbody2">Full Body Exercise 2</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
                             <p class="py-5">Sets: 3</p>
-                            <p>Reps: 10</p>
+                            <p id="reps_fullbody2">Reps: 8</p>
                         </div>
                         <div class="flex flex-col p-10 text-center">
-                            <p class="py-5">Difficulty: Intermediate</p>
-                            <p class="">Muscle Group: Chest and Triceps</p>
+                            <p id="difficulty_fullbody2" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_fullbody2">Muscle Group: Full Body</p>
                         </div>
                     </div>
-                    <p class="p-5">Description</p>
-                    <p>Dips are a compound exercise that works the chest and triceps. Use parallel bars, lower your body, and push it back up.</p>
+                    <p id="description_fullbody2" class="p-5">Description</p>
+                    <p id="description_text_fullbody2">Description for Full Body Exercise 2.</p>
                 </div>
                 <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <h1 class="">Tricep Pushdowns</h1>
+                    <h1 id="exercise_name_fullbody3">Full Body Exercise 3</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
                             <p class="py-5">Sets: 3</p>
-                            <p>Reps: 12</p>
+                            <p id="reps_fullbody3">Reps: 8</p>
                         </div>
                         <div class="flex flex-col p-10 text-center">
-                            <p class="py-5">Difficulty: Intermediate</p>
-                            <p class="">Muscle Group: Triceps</p>
+                            <p id="difficulty_fullbody3" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_fullbody3">Muscle Group: Full Body</p>
                         </div>
                     </div>
-                    <p class="p-5">Description</p>
-                    <p>Tricep pushdowns isolate the triceps. Use a cable machine, grip the bar with both hands, and push it downward, extending your arms.</p>
+                    <p id="description_fullbody3" class="p-5">Description</p>
+                    <p id="description_text_fullbody3">Description for Full Body Exercise 3.</p>
                 </div>
                 <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <h1 class="">Skull Crushers</h1>
+                    <h1 id="exercise_name_fullbody4">Full Body Exercise 4</h1>
                     <div class="flex flex-row-reverse justify-between">
                         <div class="flex flex-col p-10">
                             <p class="py-5">Sets: 3</p>
-                            <p>Reps: 10</p>
+                            <p id="reps_fullbody4">Reps: 8</p>
                         </div>
                         <div class="flex flex-col p-10 text-center">
-                            <p class="py-5">Difficulty: Intermediate</p>
-                            <p class="">Muscle Group: Triceps</p>
+                            <p id="difficulty_fullbody4" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_fullbody4">Muscle Group: Full Body</p>
                         </div>
                     </div>
-                    <p class="p-5">Description</p>
-                    <p>Skull crushers target the triceps. Lie on a bench, hold a barbell, and lower it toward your forehead, then extend your arms.</p>
+                    <p id="description_fullbody4" class="p-5">Description</p>
+                    <p id="description_text_fullbody4">Description for Full Body Exercise 4.</p>
                 </div>
-                <!-- Bro Split + Muscle Growth -->
-                <!-- Bro Split + Weight Loss -->
-                <!-- Push-Pull-Legs + Muscle Growth -->
-                <!-- Push-Pull-Legs + Strength And Power -->
-                <!-- Push-Pull-Legs + Weight Loss -->
-                <!-- Full Body + Muscle Growth -->
-                <!-- Full Body + Strength And Power -->
-                <!-- Full Body + Weight Loss -->
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_fullbody5">Full Body Exercise 5</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_fullbody5">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_fullbody5" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_fullbody5">Muscle Group: Full Body</p>
+                        </div>
+                    </div>
+                    <p id="description_fullbody5" class="p-5">Description</p>
+                    <p id="description_text_fullbody5">Description for Full Body Exercise 5.</p>
+                </div>
+            </div>
+                <!-- pull -->
+                <div id="pullResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_pull1">Pull Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_pull1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_pull1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_pull1">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_pull1" class="p-5">Description</p>
+                        <p id="description_text_pull1">Description for Pull Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_pull2">Pull Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_pull2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_pull2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_pull2">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_pull2" class="p-5">Description</p>
+                        <p id="description_text_pull2">Description for Pull Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_pull3">Pull Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_pull3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_pull3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_pull3">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_pull3" class="p-5">Description</p>
+                        <p id="description_text_pull3">Description for Pull Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_pull4">Pull Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_pull4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_pull4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_pull4">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_pull4" class="p-5">Description</p>
+                        <p id="description_text_pull4">Description for Pull Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_pull5">Pull Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_pull5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_pull5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_pull5">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_pull5" class="p-5">Description</p>
+                        <p id="description_text_pull5">Description for Pull Exercise 5.</p>
+                    </div>
+                
+                <!-- chest -->
+                <div id="chestResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_chest1">Chest Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_chest1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_chest1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_chest1">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_chest1" class="p-5">Description</p>
+                        <p id="description_text_chest1">Description for Chest Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_chest2">Chest Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_chest2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_chest2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_chest2">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_chest2" class="p-5">Description</p>
+                        <p id="description_text_chest2">Description for Chest Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_chest3">Chest Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_chest3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_chest3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_chest3">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_chest3" class="p-5">Description</p>
+                        <p id="description_text_chest3">Description for Chest Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark.bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_chest4">Chest Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_chest4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_chest4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_chest4">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_chest4" class="p-5">Description</p>
+                        <p id="description_text_chest4">Description for Chest Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_chest5">Chest Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_chest5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_chest5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_chest5">Muscle Group: Chest</p>
+                            </div>
+                        </div>
+                        <p id="description_chest5" class="p-5">Description</p>
+                        <p id="description_text_chest5">Description for Chest Exercise 5.</p>
+                    </div>
+                </div>
+                <!-- back -->
+                <div id="backResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_back1">Back Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_back1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_back1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_back1">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_back1" class="p-5">Description</p>
+                        <p id="description_text_back1">Description for Back Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_back2">Back Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_back2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_back2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_back2">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_back2" class="p-5">Description</p>
+                        <p id="description_text_back2">Description for Back Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_back3">Back Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_back3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_back3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_back3">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_back3" class="p-5">Description</p>
+                        <p id="description_text_back3">Description for Back Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_back4">Back Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_back4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_back4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_back4">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_back4" class="p-5">Description</p>
+                        <p id="description_text_back4">Description for Back Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_back5">Back Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_back5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_back5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_back5">Muscle Group: Back</p>
+                            </div>
+                        </div>
+                        <p id="description_back5" class="p-5">Description</p>
+                        <p id="description_text_back5">Description for Back Exercise 5.</p>
+                    </div>
+                </div>
+                <!-- legs  -->
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_legs1">Legs Exercise 1</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_legs1">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_legs1" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_legs1">Muscle Group: Legs</p>
+                        </div>
+                    </div>
+                    <p id="description_legs1" class="p-5">Description</p>
+                    <p id="description_text_legs1">Description for Legs Exercise 1.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_legs2">Legs Exercise 2</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_legs2">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_legs2" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_legs2">Muscle Group: Legs</p>
+                        </div>
+                    </div>
+                    <p id="description_legs2" class="p-5">Description</p>
+                    <p id="description_text_legs2">Description for Legs Exercise 2.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_legs3">Legs Exercise 3</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_legs3">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_legs3" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_legs3">Muscle Group: Legs</p>
+                        </div>
+                    </div>
+                    <p id="description_legs3" class="p-5">Description</p>
+                    <p id="description_text_legs3">Description for Legs Exercise 3.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_legs4">Legs Exercise 4</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_legs4">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_legs4" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_legs4">Muscle Group: Legs</p>
+                        </div>
+                    </div>
+                    <p id="description_legs4" class="p-5">Description</p>
+                    <p id="description_text_legs4">Description for Legs Exercise 4.</p>
+                </div>
+                <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h1 id="exercise_name_legs5">Legs Exercise 5</h1>
+                    <div class="flex flex-row-reverse justify-between">
+                        <div class="flex flex-col p-10">
+                            <p class="py-5">Sets: 3</p>
+                            <p id="reps_legs5">Reps: 8</p>
+                        </div>
+                        <div class="flex flex-col p-10 text-center">
+                            <p id="difficulty_legs5" class="py-5">Difficulty: Intermediate</p>
+                            <p id="muscle_group_legs5">Muscle Group: Legs</p>
+                        </div>
+                    </div>
+                    <p id="description_legs5" class="p-5">Description</p>
+                    <p id="description_text_legs5">Description for Legs Exercise 5.</p>
+                </div>
+                </div>
+                <!-- shoulder -->
+                <div id="shoulderResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_shoulders1">Shoulders Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_shoulders1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_shoulders1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_shoulders1">Muscle Group: Shoulders</p>
+                            </div>
+                        </div>
+                        <p id="description_shoulders1" class="p-5">Description</p>
+                        <p id="description_text_shoulders1">Description for Shoulders Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_shoulders2">Shoulders Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_shoulders2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_shoulders2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_shoulders2">Muscle Group: Shoulders</p>
+                            </div>
+                        </div>
+                        <p id="description_shoulders2" class="p-5">Description</p>
+                        <p id="description_text_shoulders2">Description for Shoulders Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_shoulders3">Shoulders Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_shoulders3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_shoulders3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_shoulders3">Muscle Group: Shoulders</p>
+                            </div>
+                        </div>
+                        <p id="description_shoulders3" class="p-5">Description</p>
+                        <p id="description_text_shoulders3">Description for Shoulders Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_shoulders4">Shoulders Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_shoulders4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_shoulders4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_shoulders4">Muscle Group: Shoulders</p>
+                            </div>
+                        </div>
+                        <p id="description_shoulders4" class="p-5">Description</p>
+                        <p id="description_text_shoulders4">Description for Shoulders Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_shoulders5">Shoulders Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_shoulders5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_shoulders5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_shoulders5">Muscle Group: Shoulders</p>
+                            </div>
+                        </div>
+                        <p id="description_shoulders5" class="p-5">Description</p>
+                        <p id="description_text_shoulders5">Description for Shoulders Exercise 5.</p>
+                    </div>
+                </div>
+                <!-- arms -->
+                <div id="armsResults" style="display: none;">
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_arms1">Arms Exercise 1</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_arms1">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_arms1" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_arms1">Muscle Group: Arms</p>
+                            </div>
+                        </div>
+                        <p id="description_arms1" class="p-5">Description</p>
+                        <p id="description_text_arms1">Description for Arms Exercise 1.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_arms2">Arms Exercise 2</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_arms2">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_arms2" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_arms2">Muscle Group: Arms</p>
+                            </div>
+                        </div>
+                        <p id="description_arms2" class="p-5">Description</p>
+                        <p id="description_text_arms2">Description for Arms Exercise 2.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_arms3">Arms Exercise 3</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_arms3">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_arms3" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_arms3">Muscle Group: Arms</p>
+                            </div>
+                        </div>
+                        <p id="description_arms3" class="p-5">Description</p>
+                        <p id="description_text_arms3">Description for Arms Exercise 3.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_arms4">Arms Exercise 4</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_arms4">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_arms4" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_arms4">Muscle Group: Arms</p>
+                            </div>
+                        </div>
+                        <p id="description_arms4" class="p-5">Description</p>
+                        <p id="description_text_arms4">Description for Arms Exercise 4.</p>
+                    </div>
+                    <div class="block max-w-md p-6 bg-gray-800 border-gray-200 border rounded-lg shadow hover:bg-gray-500 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h1 id="exercise_name_arms5">Arms Exercise 5</h1>
+                        <div class="flex flex-row-reverse justify-between">
+                            <div class="flex flex-col p-10">
+                                <p class="py-5">Sets: 3</p>
+                                <p id="reps_arms5">Reps: 8</p>
+                            </div>
+                            <div class="flex flex-col p-10 text-center">
+                                <p id="difficulty_arms5" class="py-5">Difficulty: Intermediate</p>
+                                <p id="muscle_group_arms5">Muscle Group: Arms</p>
+                            </div>
+                        </div>
+                        <p id="description_arms5" class="p-5">Description</p>
+                        <p id="description_text_arms5">Description for Arms Exercise 5.</p>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
-let fullBody = false;
-let pushPullLegs = false;
-let broSplit = false;
-let muscleGrowth = false;
-let strengthPower = false;
-let weightLoss = false;    
+//references to the buttons
+const fullBody = document.getElementById('fullbodyBtn');
+const pushPullLegs = document.getElementById('PPLBtn');
+const broSplit = document.getElementById('brosplitBtn');
+const muscleGrowth = document.getElementById('muscleGrowthBtn');
+const strengthPower = document.getElementById('strengthPowerBtn');
+const weightLoss = document.getElementById('weightLossBtn');   
+const generate = document.getElementById('generateBtn'); 
+//Initialize button states
+let fullBodyActive = false;
+let pushPullLegsActive = false;
+let broSplitActive = false;
+let muscleGrowthActive = false;
+let strengthPowerActive = false;
+let weightLossActive = false; 
 
 
 // clicking push pull legs button
@@ -203,9 +749,9 @@ document.getElementById('PPLBtn').style.borderColor = 'rgb(63 131 248)';
 document.getElementById('brosplitBtn').style.borderColor = 'rgb(2 6 23)';
 document.getElementById('fullbodyBtn').style.borderColor = 'rgb(2 6 23)';
 
-fullBody = false;
-pushPullLegs = true;
-broSplit = false;
+fullBodyActive = false;
+pushPullLegsActive = true;
+broSplitActive = false;
 };
 
 
@@ -220,9 +766,9 @@ document.getElementById('brosplitBtn').style.borderColor = 'rgb(63 131 248)';
 document.getElementById('PPLBtn').style.borderColor = 'rgb(2 6 23)';
 document.getElementById('fullbodyBtn').style.borderColor = 'rgb(2 6 23)';
 
-fullBody = false;
-pushPullLegs = false;
-broSplit = true;
+fullBodyActive = false;
+pushPullLegsActive = false;
+broSplitActive = true;
 
 };
 
@@ -238,9 +784,9 @@ document.getElementById('fullbodyBtn').style.borderColor = 'rgb(63 131 248)';
 document.getElementById('PPLBtn').style.borderColor = 'rgb(2 6 23)';
 document.getElementById('brosplitBtn').style.borderColor = 'rgb(2 6 23)';
 
-fullBody = true;
-pushPullLegs = false;
-broSplit = false;
+fullBodyActive = true;
+pushPullLegsActive = false;
+broSplitActive = false;
 };
 
 
@@ -248,24 +794,16 @@ var fullbodyBtn = document.getElementById("fullbodyBtn").addEventListener("click
     fullBodySelected()
 );
 
-if(fullBody && pushPullLegs && broSplit === false){
-    document.getElementById('strengthPowerBtn').style.pointerEvents = 'none';
-    document.getElementById('muscleGrowthBtn').style.pointerEvents = 'none';
-    document.getElementById('weightLossBtn').style.pointerEvents = 'none';
-} else {
-    document.getElementById('strengthPowerBtn').style.pointerEvents = 'auto';
-    document.getElementById('muscleGrowthBtn').style.pointerEvents = 'auto';
-    document.getElementById('weightLossBtn').style.pointerEvents = 'auto';
-}
+
 
 function muscleGrowthSelected(){
     document.getElementById('muscleGrowthBtn').style.borderColor = 'rgb(63 131 248)';
     document.getElementById('strengthPowerBtn').style.borderColor = 'rgb(2 6 23)';
     document.getElementById('weightLossBtn').style.borderColor = 'rgb(2 6 23)';
 
-muscleGrowth = true;
-strengthPower = false;
-weightLoss = false; 
+muscleGrowthActive = true;
+strengthPowerActive = false;
+weightLossActive = false; 
 
 };
 var muscleGrowthBtn = document.getElementById("muscleGrowthBtn").addEventListener("click", () =>
@@ -277,9 +815,9 @@ function strengthPowerSelected(){
     document.getElementById('muscleGrowthBtn').style.borderColor = 'rgb(2 6 23)';
     document.getElementById('weightLossBtn').style.borderColor = 'rgb(2 6 23)';
 
-muscleGrowth = false;
-strengthPower = true;
-weightLoss = false; 
+muscleGrowthActive = false;
+strengthPowerActive = true;
+weightLossActive = false; 
 };
 var strengthPowerBtn = document.getElementById("strengthPowerBtn").addEventListener("click", () =>
 strengthPowerSelected()
@@ -292,15 +830,691 @@ function weightLossSelected(){
     document.getElementById('strengthPowerBtn').style.borderColor = 'rgb(2 6 23)';
     document.getElementById('muscleGrowthBtn').style.borderColor = 'rgb(2 6 23)';
 
-muscleGrowth = false;
-strengthPower = false;
-weightLoss = true;     
+muscleGrowthActive = false;
+strengthPowerActive = false;
+weightLossActive = true; 
 };
 var weightLossBtn = document.getElementById("weightLossBtn").addEventListener("click", () =>
 weightLossSelected()
 );
 
+/*delete after
+pushResults
+pullResults
+chestResults
+backResults
+legsResults
+shoulderResults
+armsResults
+fullBodyResults
+*/
 
+
+//generation functions
+// Function for combination 1
+function fullBodyAndMuscleGrowth() {
+  // Code for combination 1
+  //show fullbody
+  document.getElementById('fullBodyResults').style.display = 'block';
+//set the html for each workout
+  document.getElementById('exercise_name_fullbody1').innerHTML = ''
+  document.getElementById('reps_fullbody1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody1').innerHTML = ''
+  document.getElementById('description_text_fullbody1').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody2').innerHTML = ''
+  document.getElementById('reps_fullbody2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody2').innerHTML = ''
+  document.getElementById('description_text_fullbody2').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody3').innerHTML = ''
+  document.getElementById('reps_fullbody3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody3').innerHTML = ''
+  document.getElementById('description_text_fullbody3').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody4').innerHTML = ''
+  document.getElementById('reps_fullbody4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody4').innerHTML = ''
+  document.getElementById('description_text_fullbody4').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody5').innerHTML = ''
+  document.getElementById('reps_fullbody5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody5').innerHTML = ''
+  document.getElementById('description_text_fullbody5').innerHTML = ''
+
+  console.log('Full body and muscle growth are active.');
+}
+
+// Function for combination 2
+function fullBodyAndStrengthPower() {
+  // Code for combination 2
+  document.getElementById('fullBodyResults').style.display = 'block';
+
+  //set the html for each workout
+  document.getElementById('exercise_name_fullbody1').innerHTML = ''
+  document.getElementById('reps_fullbody1').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_fullbody1').innerHTML = ''
+  document.getElementById('description_text_fullbody1').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody2').innerHTML = ''
+  document.getElementById('reps_fullbody2').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_fullbody2').innerHTML = ''
+  document.getElementById('description_text_fullbody2').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody3').innerHTML = ''
+  document.getElementById('reps_fullbody3').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_fullbody3').innerHTML = ''
+  document.getElementById('description_text_fullbody3').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody4').innerHTML = ''
+  document.getElementById('reps_fullbody4').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_fullbody4').innerHTML = ''
+  document.getElementById('description_text_fullbody4').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody5').innerHTML = ''
+  document.getElementById('reps_fullbody5').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_fullbody5').innerHTML = ''
+  document.getElementById('description_text_fullbody5').innerHTML = ''
+
+  console.log('Full body and strength/power are active.');
+}
+
+// Function for combination 3
+function fullBodyAndWeightLoss() {
+  // Code for combination 3
+  document.getElementById('fullBodyResults').style.display = 'block';
+
+  //set the html for each workout
+  document.getElementById('exercise_name_fullbody1').innerHTML = 'Walking';
+  document.getElementById('reps_fullbody1').innerHTML = '10000 steps';
+  document.getElementById('muscle_group_fullbody1').innerHTML = 'cardio';
+  document.getElementById('description_text_fullbody1').innerHTML = 'Walking 10,000 steps daily can aid weight loss by increasing calorie expenditure and supporting a healthier lifestyle.';
+
+  document.getElementById('exercise_name_fullbody2').innerHTML = ''
+  document.getElementById('reps_fullbody2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody2').innerHTML = ''
+  document.getElementById('description_text_fullbody2').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody3').innerHTML = ''
+  document.getElementById('reps_fullbody3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody3').innerHTML = ''
+  document.getElementById('description_text_fullbody3').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody4').innerHTML = ''
+  document.getElementById('reps_fullbody4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody4').innerHTML = ''
+  document.getElementById('description_text_fullbody4').innerHTML = ''
+
+  document.getElementById('exercise_name_fullbody5').innerHTML = ''
+  document.getElementById('reps_fullbody5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_fullbody5').innerHTML = ''
+  document.getElementById('description_text_fullbody5').innerHTML = ''
+
+  console.log('Full body and weight loss are active.');
+}
+
+// Function for combination 4
+function pushPullLegsAndMuscleGrowth() {
+  // Code for combination 4
+  document.getElementById('pushResults').style.display = 'block';
+//push inner html
+  document.getElementById('exercise_name_push1').innerHTML = ''
+  document.getElementById('reps_push1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push1').innerHTML = ''
+  document.getElementById('description_text_push1').innerHTML = ''
+
+  document.getElementById('exercise_name_push2').innerHTML = ''
+  document.getElementById('reps_push2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push2').innerHTML = ''
+  document.getElementById('description_text_push2').innerHTML = ''
+
+  document.getElementById('exercise_name_push3').innerHTML = ''
+  document.getElementById('reps_push3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push3').innerHTML = ''
+  document.getElementById('description_text_push3').innerHTML = ''
+
+  document.getElementById('exercise_name_push4').innerHTML = ''
+  document.getElementById('reps_push4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push4').innerHTML = ''
+  document.getElementById('description_text_push4').innerHTML = ''
+
+  document.getElementById('exercise_name_push5').innerHTML = ''
+  document.getElementById('reps_push5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push5').innerHTML = ''
+  document.getElementById('description_text_push5').innerHTML = ''
+//pull inner html
+  document.getElementById('exercise_name_pull1').innerHTML = ''
+  document.getElementById('reps_pull1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull1').innerHTML = ''
+  document.getElementById('description_text_pull1').innerHTML = ''
+
+  document.getElementById('exercise_name_pull2').innerHTML = ''
+  document.getElementById('reps_pull2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull2').innerHTML = ''
+  document.getElementById('description_text_pull2').innerHTML = ''
+
+  document.getElementById('exercise_name_pull3').innerHTML = ''
+  document.getElementById('reps_pull3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull3').innerHTML = ''
+  document.getElementById('description_text_pull3').innerHTML = ''
+
+  document.getElementById('exercise_name_pull4').innerHTML = ''
+  document.getElementById('reps_pull4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull4').innerHTML = ''
+  document.getElementById('description_text_pull4').innerHTML = ''
+
+  document.getElementById('exercise_name_pull5').innerHTML = ''
+  document.getElementById('reps_pull5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull5').innerHTML = ''
+  document.getElementById('description_text_pull5').innerHTML = ''
+
+  //legs inner html
+  document.getElementById('exercise_name_legs1').innerHTML = ''
+  document.getElementById('reps_legs1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs1').innerHTML = ''
+  document.getElementById('description_text_legs1').innerHTML = ''
+
+  document.getElementById('exercise_name_legs2').innerHTML = ''
+  document.getElementById('reps_legs2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs2').innerHTML = ''
+  document.getElementById('description_text_legs2').innerHTML = ''
+
+  document.getElementById('exercise_name_legs3').innerHTML = ''
+  document.getElementById('reps_legs3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs3').innerHTML = ''
+  document.getElementById('description_text_legs3').innerHTML = ''
+
+  document.getElementById('exercise_name_legs4').innerHTML = ''
+  document.getElementById('reps_legs4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs4').innerHTML = ''
+  document.getElementById('description_text_legs4').innerHTML = ''
+
+  document.getElementById('exercise_name_legs5').innerHTML = ''
+  document.getElementById('reps_legs5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs5').innerHTML = ''
+  document.getElementById('description_text_legs5').innerHTML = ''
+  console.log('Push-pull-legs and muscle growth are active.');
+}
+
+// Function for combination 5
+function pushPullLegsAndStrengthPower() {
+  // Code for combination 5
+
+  document.getElementById('pushResults').style.display = 'block';
+//push inner html
+  document.getElementById('exercise_name_push1').innerHTML = ''
+  document.getElementById('reps_push1').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_push1').innerHTML = ''
+  document.getElementById('description_text_push1').innerHTML = ''
+
+  document.getElementById('exercise_name_push2').innerHTML = ''
+  document.getElementById('reps_push2').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_push2').innerHTML = ''
+  document.getElementById('description_text_push2').innerHTML = ''
+
+  document.getElementById('exercise_name_push3').innerHTML = ''
+  document.getElementById('reps_push3').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_push3').innerHTML = ''
+  document.getElementById('description_text_push3').innerHTML = ''
+
+  document.getElementById('exercise_name_push4').innerHTML = ''
+  document.getElementById('reps_push4').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_push4').innerHTML = ''
+  document.getElementById('description_text_push4').innerHTML = ''
+
+  document.getElementById('exercise_name_push5').innerHTML = ''
+  document.getElementById('reps_push5').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_push5').innerHTML = ''
+  document.getElementById('description_text_push5').innerHTML = ''
+//pull inner html
+  document.getElementById('exercise_name_pull1').innerHTML = ''
+  document.getElementById('reps_pull1').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_pull1').innerHTML = ''
+  document.getElementById('description_text_pull1').innerHTML = ''
+
+  document.getElementById('exercise_name_pull2').innerHTML = ''
+  document.getElementById('reps_pull2').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_pull2').innerHTML = ''
+  document.getElementById('description_text_pull2').innerHTML = ''
+
+  document.getElementById('exercise_name_pull3').innerHTML = ''
+  document.getElementById('reps_pull3').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_pull3').innerHTML = ''
+  document.getElementById('description_text_pull3').innerHTML = ''
+
+  document.getElementById('exercise_name_pull4').innerHTML = ''
+  document.getElementById('reps_pull4').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_pull4').innerHTML = ''
+  document.getElementById('description_text_pull4').innerHTML = ''
+
+  document.getElementById('exercise_name_pull5').innerHTML = ''
+  document.getElementById('reps_pull5').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_pull5').innerHTML = ''
+  document.getElementById('description_text_pull5').innerHTML = ''
+
+  //legs inner html
+  document.getElementById('exercise_name_legs1').innerHTML = ''
+  document.getElementById('reps_legs1').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_legs1').innerHTML = ''
+  document.getElementById('description_text_legs1').innerHTML = ''
+
+  document.getElementById('exercise_name_legs2').innerHTML = ''
+  document.getElementById('reps_legs2').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_legs2').innerHTML = ''
+  document.getElementById('description_text_legs2').innerHTML = ''
+
+  document.getElementById('exercise_name_legs3').innerHTML = ''
+  document.getElementById('reps_legs3').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_legs3').innerHTML = ''
+  document.getElementById('description_text_legs3').innerHTML = ''
+
+  document.getElementById('exercise_name_legs4').innerHTML = ''
+  document.getElementById('reps_legs4').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_legs4').innerHTML = ''
+  document.getElementById('description_text_legs4').innerHTML = ''
+
+  document.getElementById('exercise_name_legs5').innerHTML = ''
+  document.getElementById('reps_legs5').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_legs5').innerHTML = ''
+  document.getElementById('description_text_legs5').innerHTML = ''
+
+  console.log('Push-pull-legs and strength/power are active.');
+}
+
+// Function for combination 6
+function pushPullLegsAndWeightLoss() {
+  // Code for combination 6
+
+  document.getElementById('pushResults').style.display = 'block';
+//push inner html
+document.getElementById('exercise_name_fullbody1').innerHTML = 'Walking';
+  document.getElementById('reps_fullbody1').innerHTML = '10000 steps';
+  document.getElementById('muscle_group_fullbody1').innerHTML = 'cardio';
+  document.getElementById('description_text_fullbody1').innerHTML = 'Walking 10,000 steps daily can aid weight loss by increasing calorie expenditure and supporting a healthier lifestyle.';
+
+  document.getElementById('exercise_name_push2').innerHTML = ''
+  document.getElementById('reps_push2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push2').innerHTML = ''
+  document.getElementById('description_text_push2').innerHTML = ''
+
+  document.getElementById('exercise_name_push3').innerHTML = ''
+  document.getElementById('reps_push3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push3').innerHTML = ''
+  document.getElementById('description_text_push3').innerHTML = ''
+
+  document.getElementById('exercise_name_push4').innerHTML = ''
+  document.getElementById('reps_push4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push4').innerHTML = ''
+  document.getElementById('description_text_push4').innerHTML = ''
+
+  document.getElementById('exercise_name_push5').innerHTML = ''
+  document.getElementById('reps_push5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_push5').innerHTML = ''
+  document.getElementById('description_text_push5').innerHTML = ''
+//pull inner html
+    document.getElementById('exercise_name_fullbody1').innerHTML = 'Walking';
+  document.getElementById('reps_fullbody1').innerHTML = '10000 steps';
+  document.getElementById('muscle_group_fullbody1').innerHTML = 'cardio';
+  document.getElementById('description_text_fullbody1').innerHTML = 'Walking 10,000 steps daily can aid weight loss by increasing calorie expenditure and supporting a healthier lifestyle.';
+
+
+  document.getElementById('exercise_name_pull2').innerHTML = ''
+  document.getElementById('reps_pull2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull2').innerHTML = ''
+  document.getElementById('description_text_pull2').innerHTML = ''
+
+  document.getElementById('exercise_name_pull3').innerHTML = ''
+  document.getElementById('reps_pull3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull3').innerHTML = ''
+  document.getElementById('description_text_pull3').innerHTML = ''
+
+  document.getElementById('exercise_name_pull4').innerHTML = ''
+  document.getElementById('reps_pull4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull4').innerHTML = ''
+  document.getElementById('description_text_pull4').innerHTML = ''
+
+  document.getElementById('exercise_name_pull5').innerHTML = ''
+  document.getElementById('reps_pull5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_pull5').innerHTML = ''
+  document.getElementById('description_text_pull5').innerHTML = ''
+
+  //legs inner html
+  document.getElementById('exercise_name_fullbody1').innerHTML = 'Walking';
+  document.getElementById('reps_fullbody1').innerHTML = '10000 steps';
+  document.getElementById('muscle_group_fullbody1').innerHTML = 'cardio';
+  document.getElementById('description_text_fullbody1').innerHTML = 'Walking 10,000 steps daily can aid weight loss by increasing calorie expenditure and supporting a healthier lifestyle.';
+
+  document.getElementById('exercise_name_legs2').innerHTML = ''
+  document.getElementById('reps_legs2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs2').innerHTML = ''
+  document.getElementById('description_text_legs2').innerHTML = ''
+
+  document.getElementById('exercise_name_legs3').innerHTML = ''
+  document.getElementById('reps_legs3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs3').innerHTML = ''
+  document.getElementById('description_text_legs3').innerHTML = ''
+
+  document.getElementById('exercise_name_legs4').innerHTML = ''
+  document.getElementById('reps_legs4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs4').innerHTML = ''
+  document.getElementById('description_text_legs4').innerHTML = ''
+
+  document.getElementById('exercise_name_legs5').innerHTML = ''
+  document.getElementById('reps_legs5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs5').innerHTML = ''
+  document.getElementById('description_text_legs5').innerHTML = ''
+  
+  console.log('Push-pull-legs and weight loss are active.');
+}
+
+// Function for combination 7
+function broSplitAndMuscleGrowth() {
+  // Code for combination 7
+  document.getElementById('chestResults').style.display = 'block';
+
+  //chest
+  document.getElementById('exercise_name_chest1').innerHTML = ''
+  document.getElementById('reps_chest1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_chest1').innerHTML = ''
+  document.getElementById('description_text_chest1').innerHTML = ''
+
+  document.getElementById('exercise_name_chest2').innerHTML = '';
+  document.getElementById('reps_chest2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_chest2').innerHTML = '';
+  document.getElementById('description_text_chest2').innerHTML = '';
+
+    document.getElementById('exercise_name_chest3').innerHTML = '';
+    document.getElementById('reps_chest3').innerHTML = '8 to 12';
+    document.getElementById('muscle_group_chest3').innerHTML = '';
+    document.getElementById('description_text_chest3').innerHTML = '';
+
+    document.getElementById('exercise_name_chest4').innerHTML = '';
+    document.getElementById('reps_chest4').innerHTML = '8 to 12';
+    document.getElementById('muscle_group_chest4').innerHTML = '';
+    document.getElementById('description_text_chest4').innerHTML = '';
+
+    document.getElementById('exercise_name_chest5').innerHTML = '';
+    document.getElementById('reps_chest5').innerHTML = '8 to 12';
+    document.getElementById('muscle_group_chest5').innerHTML = '';
+    document.getElementById('description_text_chest5').innerHTML = '';
+
+  //shoulders
+  document.getElementById('exercise_name_shoulders1').innerHTML = '';
+document.getElementById('reps_shoulders1').innerHTML = '8 to 12';
+document.getElementById('muscle_group_shoulders1').innerHTML = '';
+document.getElementById('description_text_shoulders1').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders2').innerHTML = '';
+document.getElementById('reps_shoulders2').innerHTML = '8 to 12';
+document.getElementById('muscle_group_shoulders2').innerHTML = '';
+document.getElementById('description_text_shoulders2').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders3').innerHTML = '';
+document.getElementById('reps_shoulders3').innerHTML = '8 to 12';
+document.getElementById('muscle_group_shoulders3').innerHTML = '';
+document.getElementById('description_text_shoulders3').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders4').innerHTML = '';
+document.getElementById('reps_shoulders4').innerHTML = '8 to 12';
+document.getElementById('muscle_group_shoulders4').innerHTML = '';
+document.getElementById('description_text_shoulders4').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders5').innerHTML = '';
+document.getElementById('reps_shoulders5').innerHTML = '8 to 12';
+document.getElementById('muscle_group_shoulders5').innerHTML = '';
+document.getElementById('description_text_shoulders5').innerHTML = '';
+
+
+  //legs 
+  document.getElementById('exercise_name_legs1').innerHTML = ''
+  document.getElementById('reps_legs1').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs1').innerHTML = ''
+  document.getElementById('description_text_legs1').innerHTML = ''
+
+  document.getElementById('exercise_name_legs2').innerHTML = ''
+  document.getElementById('reps_legs2').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs2').innerHTML = ''
+  document.getElementById('description_text_legs2').innerHTML = ''
+
+  document.getElementById('exercise_name_legs3').innerHTML = ''
+  document.getElementById('reps_legs3').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs3').innerHTML = ''
+  document.getElementById('description_text_legs3').innerHTML = ''
+
+  document.getElementById('exercise_name_legs4').innerHTML = ''
+  document.getElementById('reps_legs4').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs4').innerHTML = ''
+  document.getElementById('description_text_legs4').innerHTML = ''
+
+  document.getElementById('exercise_name_legs5').innerHTML = ''
+  document.getElementById('reps_legs5').innerHTML = '8 to 12';
+  document.getElementById('muscle_group_legs5').innerHTML = ''
+  document.getElementById('description_text_legs5').innerHTML = ''
+  //back
+  document.getElementById('exercise_name_back1').innerHTML = '';
+document.getElementById('reps_back1').innerHTML = '8 to 12';
+document.getElementById('muscle_group_back1').innerHTML = '';
+document.getElementById('description_text_back1').innerHTML = '';
+
+document.getElementById('exercise_name_back2').innerHTML = '';
+document.getElementById('reps_back2').innerHTML = '8 to 12';
+document.getElementById('muscle_group_back2').innerHTML = '';
+document.getElementById('description_text_back2').innerHTML = '';
+
+document.getElementById('exercise_name_back3').innerHTML = '';
+document.getElementById('reps_back3').innerHTML = '8 to 12';
+document.getElementById('muscle_group_back3').innerHTML = '';
+document.getElementById('description_text_back3').innerHTML = '';
+
+document.getElementById('exercise_name_back4').innerHTML = '';
+document.getElementById('reps_back4').innerHTML = '8 to 12';
+document.getElementById('muscle_group_back4').innerHTML = '';
+document.getElementById('description_text_back4').innerHTML = '';
+
+document.getElementById('exercise_name_back5').innerHTML = '';
+document.getElementById('reps_back5').innerHTML = '8 to 12';
+document.getElementById('muscle_group_back5').innerHTML = '';
+document.getElementById('description_text_back5').innerHTML = '';
+
+  //arms
+  document.getElementById('exercise_name_arms1').innerHTML = '';
+document.getElementById('reps_arms1').innerHTML = '8 to 12';
+document.getElementById('muscle_group_arms1').innerHTML = '';
+document.getElementById('description_text_arms1').innerHTML = '';
+
+document.getElementById('exercise_name_arms2').innerHTML = '';
+document.getElementById('reps_arms2').innerHTML = '8 to 12';
+document.getElementById('muscle_group_arms2').innerHTML = '';
+document.getElementById('description_text_arms2').innerHTML = '';
+
+document.getElementById('exercise_name_arms3').innerHTML = '';
+document.getElementById('reps_arms3').innerHTML = '8 to 12';
+document.getElementById('muscle_group_arms3').innerHTML = '';
+document.getElementById('description_text_arms3').innerHTML = '';
+
+document.getElementById('exercise_name_arms4').innerHTML = '';
+document.getElementById('reps_arms4').innerHTML = '8 to 12';
+document.getElementById('muscle_group_arms4').innerHTML = '';
+document.getElementById('description_text_arms4').innerHTML = '';
+
+document.getElementById('exercise_name_arms5').innerHTML = '';
+document.getElementById('reps_arms5').innerHTML = '8 to 12';
+document.getElementById('muscle_group_arms5').innerHTML = '';
+document.getElementById('description_text_arms5').innerHTML = '';
+
+  console.log('Bro split and muscle growth are active.');
+}
+
+// Function for combination 8
+function broSplitAndStrengthPower() {
+  // Code for combination 8
+  document.getElementById('chestResults').style.display = 'block';
+
+//chest
+document.getElementById('exercise_name_chest1').innerHTML = ''
+document.getElementById('reps_chest1').innerHTML = '6 to 8';
+document.getElementById('muscle_group_chest1').innerHTML = ''
+document.getElementById('description_text_chest1').innerHTML = ''
+
+document.getElementById('exercise_name_chest2').innerHTML = '';
+document.getElementById('reps_chest2').innerHTML = '6 to 8';
+document.getElementById('muscle_group_chest2').innerHTML = '';
+document.getElementById('description_text_chest2').innerHTML = '';
+
+  document.getElementById('exercise_name_chest3').innerHTML = '';
+  document.getElementById('reps_chest3').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_chest3').innerHTML = '';
+  document.getElementById('description_text_chest3').innerHTML = '';
+
+  document.getElementById('exercise_name_chest4').innerHTML = '';
+  document.getElementById('reps_chest4').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_chest4').innerHTML = '';
+  document.getElementById('description_text_chest4').innerHTML = '';
+
+  document.getElementById('exercise_name_chest5').innerHTML = '';
+  document.getElementById('reps_chest5').innerHTML = '6 to 8';
+  document.getElementById('muscle_group_chest5').innerHTML = '';
+  document.getElementById('description_text_chest5').innerHTML = '';
+
+//shoulders
+document.getElementById('exercise_name_shoulders1').innerHTML = '';
+document.getElementById('reps_shoulders1').innerHTML = '6 to 8';
+document.getElementById('muscle_group_shoulders1').innerHTML = '';
+document.getElementById('description_text_shoulders1').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders2').innerHTML = '';
+document.getElementById('reps_shoulders2').innerHTML = '6 to 8';
+document.getElementById('muscle_group_shoulders2').innerHTML = '';
+document.getElementById('description_text_shoulders2').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders3').innerHTML = '';
+document.getElementById('reps_shoulders3').innerHTML = '6 to 8';
+document.getElementById('muscle_group_shoulders3').innerHTML = '';
+document.getElementById('description_text_shoulders3').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders4').innerHTML = '';
+document.getElementById('reps_shoulders4').innerHTML = '6 to 8';
+document.getElementById('muscle_group_shoulders4').innerHTML = '';
+document.getElementById('description_text_shoulders4').innerHTML = '';
+
+document.getElementById('exercise_name_shoulders5').innerHTML = '';
+document.getElementById('reps_shoulders5').innerHTML = '6 to 8';
+document.getElementById('muscle_group_shoulders5').innerHTML = '';
+document.getElementById('description_text_shoulders5').innerHTML = '';
+
+
+//legs 
+document.getElementById('exercise_name_legs1').innerHTML = ''
+document.getElementById('reps_legs1').innerHTML = '6 to 8';
+document.getElementById('muscle_group_legs1').innerHTML = ''
+document.getElementById('description_text_legs1').innerHTML = ''
+
+document.getElementById('exercise_name_legs2').innerHTML = ''
+document.getElementById('reps_legs2').innerHTML = '6 to 8';
+document.getElementById('muscle_group_legs2').innerHTML = ''
+document.getElementById('description_text_legs2').innerHTML = ''
+
+document.getElementById('exercise_name_legs3').innerHTML = ''
+document.getElementById('reps_legs3').innerHTML = '6 to 8';
+document.getElementById('muscle_group_legs3').innerHTML = ''
+document.getElementById('description_text_legs3').innerHTML = ''
+
+document.getElementById('exercise_name_legs4').innerHTML = ''
+document.getElementById('reps_legs4').innerHTML = '6 to 8';
+document.getElementById('muscle_group_legs4').innerHTML = ''
+document.getElementById('description_text_legs4').innerHTML = ''
+
+document.getElementById('exercise_name_legs5').innerHTML = ''
+document.getElementById('reps_legs5').innerHTML = '6 to 8';
+document.getElementById('muscle_group_legs5').innerHTML = ''
+document.getElementById('description_text_legs5').innerHTML = ''
+//back
+document.getElementById('exercise_name_back1').innerHTML = '';
+document.getElementById('reps_back1').innerHTML = '6 to 8';
+document.getElementById('muscle_group_back1').innerHTML = '';
+document.getElementById('description_text_back1').innerHTML = '';
+
+document.getElementById('exercise_name_back2').innerHTML = '';
+document.getElementById('reps_back2').innerHTML = '6 to 8';
+document.getElementById('muscle_group_back2').innerHTML = '';
+document.getElementById('description_text_back2').innerHTML = '';
+
+document.getElementById('exercise_name_back3').innerHTML = '';
+document.getElementById('reps_back3').innerHTML = '6 to 8';
+document.getElementById('muscle_group_back3').innerHTML = '';
+document.getElementById('description_text_back3').innerHTML = '';
+
+document.getElementById('exercise_name_back4').innerHTML = '';
+document.getElementById('reps_back4').innerHTML = '6 to 8';
+document.getElementById('muscle_group_back4').innerHTML = '';
+document.getElementById('description_text_back4').innerHTML = '';
+
+document.getElementById('exercise_name_back5').innerHTML = '';
+document.getElementById('reps_back5').innerHTML = '6 to 8';
+document.getElementById('muscle_group_back5').innerHTML = '';
+document.getElementById('description_text_back5').innerHTML = '';
+
+//arms
+document.getElementById('exercise_name_arms1').innerHTML = '';
+document.getElementById('reps_arms1').innerHTML = '6 to 8';
+document.getElementById('muscle_group_arms1').innerHTML = '';
+document.getElementById('description_text_arms1').innerHTML = '';
+
+document.getElementById('exercise_name_arms2').innerHTML = '';
+document.getElementById('reps_arms2').innerHTML = '6 to 8';
+document.getElementById('muscle_group_arms2').innerHTML = '';
+document.getElementById('description_text_arms2').innerHTML = '';
+
+document.getElementById('exercise_name_arms3').innerHTML = '';
+document.getElementById('reps_arms3').innerHTML = '6 to 8';
+document.getElementById('muscle_group_arms3').innerHTML = '';
+document.getElementById('description_text_arms3').innerHTML = '';
+
+document.getElementById('exercise_name_arms4').innerHTML = '';
+document.getElementById('reps_arms4').innerHTML = '6 to 8';
+document.getElementById('muscle_group_arms4').innerHTML = '';
+document.getElementById('description_text_arms4').innerHTML = '';
+
+document.getElementById('exercise_name_arms5').innerHTML = '';
+document.getElementById('reps_arms5').innerHTML = '6 to 8';
+document.getElementById('muscle_group_arms5').innerHTML = '';
+document.getElementById('description_text_arms5').innerHTML = '';
+  console.log('Bro split and strength/power are active.');
+}
+
+// Function for combination 9
+function broSplitAndWeightLoss() {
+  // Code for combination 9
+  console.log('Bro split and weight loss are active.');
+}
+
+
+//generate button is clicked and the function is called
+var generateBtn = document.getElementById("generateBtn").addEventListener("click", () => {
+    if (fullBodyActive && muscleGrowthActive) {
+  fullBodyAndMuscleGrowth();
+} else if (fullBodyActive && strengthPowerActive) {
+  fullBodyAndStrengthPower();
+} else if (fullBodyActive && weightLossActive) {
+  fullBodyAndWeightLoss();
+} else if (pushPullLegsActive && muscleGrowthActive) {
+  pushPullLegsAndMuscleGrowth();
+} else if (pushPullLegsActive && strengthPowerActive) {
+  pushPullLegsAndStrengthPower();
+} else if (pushPullLegsActive && weightLossActive) {
+  pushPullLegsAndWeightLoss();
+} else if (broSplitActive && muscleGrowthActive) {
+  broSplitAndMuscleGrowth();
+} else if (broSplitActive && strengthPowerActive) {
+  broSplitAndStrengthPower();
+} else if (broSplitActive && weightLossActive) {
+  broSplitAndWeightLoss();
+} else {
+  // Code to handle cases where no combination is active
+  console.log('No valid combination is active.');
+}
+
+});
 
 });
 </script>
