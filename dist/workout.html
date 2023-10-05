@@ -248,6 +248,16 @@ var fullbodyBtn = document.getElementById("fullbodyBtn").addEventListener("click
     fullBodySelected()
 );
 
+if(fullBody && pushPullLegs && broSplit === false){
+    document.getElementById('strengthPowerBtn').style.pointerEvents = 'none';
+    document.getElementById('muscleGrowthBtn').style.pointerEvents = 'none';
+    document.getElementById('weightLossBtn').style.pointerEvents = 'none';
+} else {
+    document.getElementById('strengthPowerBtn').style.pointerEvents = 'auto';
+    document.getElementById('muscleGrowthBtn').style.pointerEvents = 'auto';
+    document.getElementById('weightLossBtn').style.pointerEvents = 'auto';
+}
+
 function muscleGrowthSelected(){
     document.getElementById('muscleGrowthBtn').style.borderColor = 'rgb(63 131 248)';
     document.getElementById('strengthPowerBtn').style.borderColor = 'rgb(2 6 23)';

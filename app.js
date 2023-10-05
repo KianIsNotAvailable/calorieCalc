@@ -7,10 +7,19 @@ const pool = createPool({
   database: "workoutDatabase",
   connectionLimit: 10
 })
-
 pool.query(`SELECT * FROM exercises`, (err, result, fields) => {
   if(err){
     return console.log(err);
   }
-  return console.log(result);
-})
+
+
+
+  queryResult = result;
+
+
+
+
+  console.log(queryResult);
+  
+});
+
